@@ -1,0 +1,2004 @@
+-- Persistent Data
+local shared = {
+{};
+} -- shared
+shared[1]["SimpleString"] = "0.4.11";
+shared[1]["Major"] = 0;
+shared[1]["Patch"] = 0;
+shared[1]["Status"] = "unstable";
+shared[1]["Minor"] = 4;
+shared[1]["Name"] = "Fennel (48kHz, 128smps)";
+shared[1]["Build"] = 11;
+shared[1]["String"] = "0.4.11 (unstable)";
+local obj1 = {
+	["instanceKey"] = "af683f69";
+	["controls"] = {
+	};
+	["controlOrder"] = {
+		[1] = "clock";
+		[2] = "reset";
+		[3] = "meter";
+		[4] = "1";
+		[5] = "2";
+		[6] = "3";
+		[7] = "4";
+		[8] = "5";
+		[9] = "6";
+		[10] = "7";
+		[11] = "8";
+	};
+	["controlBranches"] = {
+		["7"] = {
+			["units"] = {
+			};
+			["objects"] = {
+				[1] = {
+					["options"] = {
+						["State"] = 0;
+					};
+					["params"] = {
+						["Threshold"] = 0.1;
+					};
+				};
+			};
+			["id"] = "7";
+			["selection"] = {
+				["section"] = 0;
+				["view"] = "default";
+				["spot"] = 0;
+			};
+			["control"] = {
+				["customizations"] = {
+					["name"] = "7";
+					["outputMode"] = 1;
+				};
+			};
+			["instanceKey"] = "a8719ae8";
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+				};
+			};
+			["type"] = "Gate";
+			["firmwareVersion"] = shared[1];
+		};
+		["reset"] = {
+			["units"] = {
+			};
+			["objects"] = {
+				[1] = {
+					["options"] = {
+						["State"] = 0;
+					};
+					["params"] = {
+						["Threshold"] = 0.1;
+					};
+				};
+			};
+			["id"] = "reset";
+			["selection"] = {
+				["section"] = 0;
+				["view"] = "default";
+				["spot"] = 1;
+			};
+			["control"] = {
+				["customizations"] = {
+					["name"] = "reset";
+				};
+			};
+			["instanceKey"] = "b07d5053";
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+				};
+			};
+			["type"] = "Gate";
+			["firmwareVersion"] = shared[1];
+		};
+		["5"] = {
+			["units"] = {
+			};
+			["objects"] = {
+				[1] = {
+					["options"] = {
+						["State"] = 0;
+					};
+					["params"] = {
+						["Threshold"] = 0.1;
+					};
+				};
+			};
+			["id"] = "5";
+			["selection"] = {
+				["section"] = 0;
+				["view"] = "default";
+				["spot"] = 0;
+			};
+			["control"] = {
+				["customizations"] = {
+					["name"] = "5";
+					["outputMode"] = 1;
+				};
+			};
+			["instanceKey"] = "7af8566f";
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+				};
+			};
+			["type"] = "Gate";
+			["firmwareVersion"] = shared[1];
+		};
+		["6"] = {
+			["units"] = {
+			};
+			["objects"] = {
+				[1] = {
+					["options"] = {
+						["State"] = 0;
+					};
+					["params"] = {
+						["Threshold"] = 0.1;
+					};
+				};
+			};
+			["id"] = "6";
+			["selection"] = {
+				["section"] = 0;
+				["view"] = "default";
+				["spot"] = 0;
+			};
+			["control"] = {
+				["customizations"] = {
+					["name"] = "6";
+					["outputMode"] = 1;
+				};
+			};
+			["instanceKey"] = "c79fac0c";
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+				};
+			};
+			["type"] = "Gate";
+			["firmwareVersion"] = shared[1];
+		};
+		["clock"] = {
+			["units"] = {
+			};
+			["objects"] = {
+				[1] = {
+					["options"] = {
+						["State"] = 0;
+					};
+					["params"] = {
+						["Threshold"] = 0.1;
+					};
+				};
+			};
+			["id"] = "clock";
+			["selection"] = {
+				["section"] = 0;
+				["view"] = "default";
+				["spot"] = 1;
+			};
+			["control"] = {
+				["customizations"] = {
+					["name"] = "clock";
+				};
+			};
+			["instanceKey"] = "e7ef41d3";
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+				};
+			};
+			["type"] = "Gate";
+			["firmwareVersion"] = shared[1];
+		};
+		["4"] = {
+			["units"] = {
+			};
+			["objects"] = {
+				[1] = {
+					["options"] = {
+						["State"] = 0;
+					};
+					["params"] = {
+						["Threshold"] = 0.1;
+					};
+				};
+			};
+			["id"] = "4";
+			["selection"] = {
+				["section"] = 0;
+				["view"] = "default";
+				["spot"] = 0;
+			};
+			["control"] = {
+				["customizations"] = {
+					["outputMode"] = 1;
+					["name"] = "4";
+				};
+			};
+			["instanceKey"] = "58621d9d";
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+				};
+			};
+			["type"] = "Gate";
+			["firmwareVersion"] = shared[1];
+		};
+		["1"] = {
+			["units"] = {
+			};
+			["objects"] = {
+				[1] = {
+					["options"] = {
+						["State"] = 0;
+					};
+					["params"] = {
+						["Threshold"] = 0.1;
+					};
+				};
+			};
+			["id"] = "1";
+			["selection"] = {
+				["section"] = 0;
+				["view"] = "default";
+				["spot"] = 0;
+			};
+			["control"] = {
+				["customizations"] = {
+					["name"] = "1";
+					["outputMode"] = 1;
+				};
+			};
+			["instanceKey"] = "3a973bb5";
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+				};
+			};
+			["type"] = "Gate";
+			["firmwareVersion"] = shared[1];
+		};
+		["2"] = {
+			["units"] = {
+			};
+			["objects"] = {
+				[1] = {
+					["options"] = {
+						["State"] = 0;
+					};
+					["params"] = {
+						["Threshold"] = 0.1;
+					};
+				};
+			};
+			["id"] = "2";
+			["selection"] = {
+				["section"] = 0;
+				["view"] = "default";
+				["spot"] = 0;
+			};
+			["control"] = {
+				["customizations"] = {
+					["name"] = "2";
+					["outputMode"] = 1;
+				};
+			};
+			["instanceKey"] = "c4592ce4";
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+				};
+			};
+			["type"] = "Gate";
+			["firmwareVersion"] = shared[1];
+		};
+		["8"] = {
+			["units"] = {
+			};
+			["objects"] = {
+				[1] = {
+					["options"] = {
+						["State"] = 0;
+					};
+					["params"] = {
+						["Threshold"] = 0.1;
+					};
+				};
+			};
+			["id"] = "8";
+			["selection"] = {
+				["section"] = 0;
+				["view"] = "default";
+				["spot"] = 0;
+			};
+			["control"] = {
+				["customizations"] = {
+					["name"] = "8";
+					["outputMode"] = 1;
+				};
+			};
+			["instanceKey"] = "3a408f84";
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+				};
+			};
+			["type"] = "Gate";
+			["firmwareVersion"] = shared[1];
+		};
+		["3"] = {
+			["units"] = {
+			};
+			["objects"] = {
+				[1] = {
+					["options"] = {
+						["State"] = 0;
+					};
+					["params"] = {
+						["Threshold"] = 0.1;
+					};
+				};
+			};
+			["id"] = "3";
+			["selection"] = {
+				["section"] = 0;
+				["view"] = "default";
+				["spot"] = 0;
+			};
+			["control"] = {
+				["customizations"] = {
+					["outputMode"] = 1;
+					["name"] = "3";
+				};
+			};
+			["instanceKey"] = "427c2b58";
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+				};
+			};
+			["type"] = "Gate";
+			["firmwareVersion"] = shared[1];
+		};
+	};
+	["lastPresetPath"] = "1:/shared";
+	["objects"] = {
+	};
+	["branches"] = {
+	};
+	["title"] = "TrigSeq 8";
+	["hasUserTitle"] = true;
+	["bypass"] = false;
+	["unitVersion"] = 1;
+	["lastPresetFilename"] = "f.unit";
+	["firmwareVersion"] = shared[1];
+	["activeView"] = "expanded";
+	["bands"] = {
+		[1] = {
+			["firmwareVersion"] = shared[1];
+			["selection"] = {
+				["section"] = 1;
+				["view"] = "expanded";
+				["spot"] = 2;
+			};
+			["units"] = {
+				[1] = {
+					["controls"] = {
+					};
+					["controlOrder"] = {
+						[1] = "gain";
+					};
+					["objects"] = {
+						["gain"] = {
+							["params"] = {
+								["Gain"] = 0.001;
+							};
+						};
+					};
+					["mute"] = true;
+					["solo"] = false;
+					["controlBranches"] = {
+					};
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "aaf3ac12";
+					["loadInfo"] = {
+						["keywords"] = "mixing, routing";
+						["category"] = "Essentials";
+						["title"] = "Mixer Channel";
+						["moduleName"] = "MixerUnit";
+						["id"] = "MixerUnit";
+						["libraryName"] = "builtins";
+					};
+					["activeView"] = "expanded";
+					["branches"] = {
+						["input"] = {
+							["selection"] = {
+								["section"] = 1;
+								["view"] = "gain";
+								["spot"] = 6;
+							};
+							["instanceKey"] = "8b305a9f";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["name"] = "TrigSeq 8 (clock)";
+										["type"] = "local";
+										["instanceKey"] = "e7ef41d3";
+									};
+								};
+							};
+							["units"] = {
+								[1] = {
+									["controls"] = {
+										["finish"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["start"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["step"] = {
+											["gainEncoderState"] = "Coarse";
+											["encoderState"] = "Fine";
+										};
+										["gain"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["objects"] = {
+										["start"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 0.0;
+											};
+										};
+										["reset"] = {
+											["options"] = {
+												["State"] = 0;
+											};
+											["params"] = {
+												["Threshold"] = 0.1;
+											};
+										};
+										["counter"] = {
+											["options"] = {
+												["Wrap"] = 1;
+												["Processing Rate"] = 1;
+											};
+											["params"] = {
+												["Value"] = 7.0;
+											};
+										};
+										["trig"] = {
+											["options"] = {
+												["State"] = 0;
+											};
+											["params"] = {
+												["Threshold"] = 0.1;
+											};
+										};
+										["finish"] = {
+											["params"] = {
+												["Bias"] = 7.0;
+												["Gain"] = 0.0;
+											};
+										};
+										["step"] = {
+											["params"] = {
+												["Bias"] = 1.0;
+												["Gain"] = 0.0;
+											};
+										};
+										["gain"] = {
+											["params"] = {
+												["Bias"] = 0.125;
+												["Gain"] = 0.0;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "input";
+										[2] = "reset";
+										[3] = "start";
+										[4] = "step";
+										[5] = "finish";
+										[6] = "gain";
+									};
+									["controlBranches"] = {
+									};
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "f1db4ec0";
+									["loadInfo"] = {
+										["keywords"] = "utility";
+										["category"] = "Mapping and Control";
+										["title"] = "Counter";
+										["moduleName"] = "CounterUnit";
+										["id"] = "CounterUnit";
+										["libraryName"] = "builtins";
+									};
+									["activeView"] = "gain";
+									["branches"] = {
+										["reset"] = {
+											["selection"] = {
+												["section"] = 0;
+												["view"] = "default";
+												["spot"] = 1;
+											};
+											["instanceKey"] = "914fe5ee";
+											["firmwareVersion"] = shared[1];
+											["channels"] = {
+												["count"] = 1;
+												["inputs"] = {
+													[1] = {
+														["name"] = "TrigSeq 8 (reset)";
+														["type"] = "local";
+														["instanceKey"] = "b07d5053";
+													};
+												};
+											};
+											["units"] = {
+											};
+										};
+									};
+									["firmwareVersion"] = shared[1];
+								};
+							};
+						};
+					};
+					["firmwareVersion"] = shared[1];
+				};
+				[2] = {
+					["controls"] = {
+						["offset"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["objects"] = {
+						["gainbias"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 1.0;
+							};
+						};
+					};
+					["controlOrder"] = {
+						[1] = "offset";
+					};
+					["controlBranches"] = {
+					};
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "9d923004";
+					["loadInfo"] = {
+						["keywords"] = "utility";
+						["category"] = "Essentials";
+						["title"] = "Offset";
+						["moduleName"] = "OffsetUnit";
+						["id"] = "OffsetUnit";
+						["libraryName"] = "builtins";
+					};
+					["activeView"] = "expanded";
+					["branches"] = {
+						["offset"] = {
+							["selection"] = {
+								["section"] = 2;
+								["view"] = "expanded";
+								["spot"] = 4;
+							};
+							["instanceKey"] = "7c00c3c9";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["channel"] = 1;
+										["name"] = "Counter #1";
+										["type"] = "local";
+										["instanceKey"] = "f1db4ec0";
+									};
+								};
+							};
+							["units"] = {
+								[1] = {
+									["controls"] = {
+										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["objects"] = {
+										["level"] = {
+											["params"] = {
+												["Bias"] = -1.0;
+												["Gain"] = 0.0;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "level";
+									};
+									["controlBranches"] = {
+									};
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "548f8bca";
+									["loadInfo"] = {
+										["keywords"] = "modulate, utility";
+										["category"] = "Essentials";
+										["title"] = "Linear Bipolar VCA";
+										["moduleName"] = "VCA.LinearBipolar";
+										["id"] = "VCA.LinearBipolar";
+										["libraryName"] = "builtins";
+									};
+									["activeView"] = "expanded";
+									["branches"] = {
+									};
+									["firmwareVersion"] = shared[1];
+								};
+								[2] = {
+									["controls"] = {
+										["thresh"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["hyst"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["objects"] = {
+										["compare"] = {
+											["options"] = {
+												["State"] = 0;
+												["Mode"] = 3;
+											};
+											["params"] = {
+												["Threshold"] = -0.1;
+											};
+										};
+										["threshold"] = {
+											["params"] = {
+												["Bias"] = -0.1;
+												["Gain"] = 0.0;
+											};
+										};
+										["hysteresis"] = {
+											["params"] = {
+												["Bias"] = 0.03;
+												["Gain"] = 0.0;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "mode";
+										[2] = "input";
+										[3] = "thresh";
+										[4] = "hyst";
+									};
+									["controlBranches"] = {
+									};
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "e03bdb55";
+									["loadInfo"] = {
+										["keywords"] = "mapping,control";
+										["category"] = "Mapping and Control";
+										["title"] = "Compare";
+										["moduleName"] = "Compare";
+										["id"] = "Compare";
+										["libraryName"] = "Accents";
+									};
+									["activeView"] = "expanded";
+									["branches"] = {
+									};
+									["firmwareVersion"] = shared[1];
+								};
+								[3] = {
+									["controls"] = {
+										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["objects"] = {
+										["level"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 1.0;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "level";
+									};
+									["controlBranches"] = {
+									};
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "8a2fc5f1";
+									["loadInfo"] = {
+										["keywords"] = "modulate, utility";
+										["category"] = "Essentials";
+										["title"] = "Linear Bipolar VCA";
+										["moduleName"] = "VCA.LinearBipolar";
+										["id"] = "VCA.LinearBipolar";
+										["libraryName"] = "builtins";
+									};
+									["activeView"] = "expanded";
+									["branches"] = {
+										["level"] = {
+											["selection"] = {
+												["section"] = 0;
+												["view"] = "default";
+												["spot"] = 1;
+											};
+											["instanceKey"] = "a4d5a9a0";
+											["firmwareVersion"] = shared[1];
+											["channels"] = {
+												["count"] = 1;
+												["inputs"] = {
+													[1] = {
+														["name"] = "TrigSeq 8 (1)";
+														["type"] = "local";
+														["instanceKey"] = "3a973bb5";
+													};
+												};
+											};
+											["units"] = {
+											};
+										};
+									};
+									["firmwareVersion"] = shared[1];
+								};
+							};
+						};
+					};
+					["firmwareVersion"] = shared[1];
+				};
+				[3] = {
+					["controls"] = {
+						["offset"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["objects"] = {
+						["gainbias"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 1.0;
+							};
+						};
+					};
+					["controlOrder"] = {
+						[1] = "offset";
+					};
+					["controlBranches"] = {
+					};
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "beb6cbf5";
+					["loadInfo"] = {
+						["keywords"] = "utility";
+						["category"] = "Essentials";
+						["title"] = "Offset";
+						["moduleName"] = "OffsetUnit";
+						["id"] = "OffsetUnit";
+						["libraryName"] = "builtins";
+					};
+					["activeView"] = "expanded";
+					["branches"] = {
+						["offset"] = {
+							["selection"] = {
+								["section"] = 1;
+								["view"] = "expanded";
+								["spot"] = 4;
+							};
+							["instanceKey"] = "b1c7e085";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["channel"] = 1;
+										["name"] = "Counter #1";
+										["type"] = "local";
+										["instanceKey"] = "f1db4ec0";
+									};
+								};
+							};
+							["units"] = {
+								[1] = {
+									["controls"] = {
+										["thresh"] = {
+											["gainEncoderState"] = "Coarse";
+											["encoderState"] = "Fine";
+										};
+										["hyst"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["objects"] = {
+										["compare"] = {
+											["options"] = {
+												["State"] = 1;
+												["Mode"] = 3;
+											};
+											["params"] = {
+												["Threshold"] = 0.06;
+											};
+										};
+										["threshold"] = {
+											["params"] = {
+												["Bias"] = 0.06;
+												["Gain"] = 0.0;
+											};
+										};
+										["hysteresis"] = {
+											["params"] = {
+												["Bias"] = 0.03;
+												["Gain"] = 0.0;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "mode";
+										[2] = "input";
+										[3] = "thresh";
+										[4] = "hyst";
+									};
+									["controlBranches"] = {
+									};
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "833dc93d";
+									["loadInfo"] = {
+										["keywords"] = "mapping,control";
+										["category"] = "Mapping and Control";
+										["title"] = "Compare";
+										["moduleName"] = "Compare";
+										["id"] = "Compare";
+										["libraryName"] = "Accents";
+									};
+									["activeView"] = "expanded";
+									["branches"] = {
+									};
+									["firmwareVersion"] = shared[1];
+								};
+								[2] = {
+									["controls"] = {
+										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["objects"] = {
+										["level"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 1.0;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "level";
+									};
+									["controlBranches"] = {
+									};
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "bbae6b76";
+									["loadInfo"] = {
+										["keywords"] = "modulate, utility";
+										["category"] = "Essentials";
+										["title"] = "Linear Bipolar VCA";
+										["moduleName"] = "VCA.LinearBipolar";
+										["id"] = "VCA.LinearBipolar";
+										["libraryName"] = "builtins";
+									};
+									["activeView"] = "expanded";
+									["branches"] = {
+										["level"] = {
+											["selection"] = {
+												["section"] = 0;
+												["view"] = "default";
+												["spot"] = 1;
+											};
+											["instanceKey"] = "d2a6a3e0";
+											["firmwareVersion"] = shared[1];
+											["channels"] = {
+												["count"] = 1;
+												["inputs"] = {
+													[1] = {
+														["name"] = "TrigSeq 8 (2)";
+														["type"] = "local";
+														["instanceKey"] = "c4592ce4";
+													};
+												};
+											};
+											["units"] = {
+											};
+										};
+									};
+									["firmwareVersion"] = shared[1];
+								};
+							};
+						};
+					};
+					["firmwareVersion"] = shared[1];
+				};
+				[4] = {
+					["controls"] = {
+						["offset"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["objects"] = {
+						["gainbias"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 1.0;
+							};
+						};
+					};
+					["controlOrder"] = {
+						[1] = "offset";
+					};
+					["controlBranches"] = {
+					};
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "f567e67a";
+					["loadInfo"] = {
+						["keywords"] = "utility";
+						["category"] = "Essentials";
+						["title"] = "Offset";
+						["moduleName"] = "OffsetUnit";
+						["id"] = "OffsetUnit";
+						["libraryName"] = "builtins";
+					};
+					["activeView"] = "expanded";
+					["branches"] = {
+						["offset"] = {
+							["selection"] = {
+								["section"] = 1;
+								["view"] = "expanded";
+								["spot"] = 4;
+							};
+							["instanceKey"] = "1a01a6e5";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["channel"] = 1;
+										["name"] = "Counter #1";
+										["type"] = "local";
+										["instanceKey"] = "f1db4ec0";
+									};
+								};
+							};
+							["units"] = {
+								[1] = {
+									["controls"] = {
+										["thresh"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["hyst"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["objects"] = {
+										["compare"] = {
+											["options"] = {
+												["State"] = 1;
+												["Mode"] = 3;
+											};
+											["params"] = {
+												["Threshold"] = 0.2;
+											};
+										};
+										["threshold"] = {
+											["params"] = {
+												["Bias"] = 0.2;
+												["Gain"] = 0.0;
+											};
+										};
+										["hysteresis"] = {
+											["params"] = {
+												["Bias"] = 0.03;
+												["Gain"] = 0.0;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "mode";
+										[2] = "input";
+										[3] = "thresh";
+										[4] = "hyst";
+									};
+									["controlBranches"] = {
+									};
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "9b966c59";
+									["loadInfo"] = {
+										["keywords"] = "mapping,control";
+										["category"] = "Mapping and Control";
+										["title"] = "Compare";
+										["moduleName"] = "Compare";
+										["id"] = "Compare";
+										["libraryName"] = "Accents";
+									};
+									["activeView"] = "expanded";
+									["branches"] = {
+									};
+									["firmwareVersion"] = shared[1];
+								};
+								[2] = {
+									["controls"] = {
+										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["objects"] = {
+										["level"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 1.0;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "level";
+									};
+									["controlBranches"] = {
+									};
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "9af82940";
+									["loadInfo"] = {
+										["keywords"] = "modulate, utility";
+										["category"] = "Essentials";
+										["title"] = "Linear Bipolar VCA";
+										["moduleName"] = "VCA.LinearBipolar";
+										["id"] = "VCA.LinearBipolar";
+										["libraryName"] = "builtins";
+									};
+									["activeView"] = "expanded";
+									["branches"] = {
+										["level"] = {
+											["selection"] = {
+												["section"] = 0;
+												["view"] = "default";
+												["spot"] = 1;
+											};
+											["instanceKey"] = "5d95971a";
+											["firmwareVersion"] = shared[1];
+											["channels"] = {
+												["count"] = 1;
+												["inputs"] = {
+													[1] = {
+														["name"] = "TrigSeq 8 (3)";
+														["type"] = "local";
+														["instanceKey"] = "427c2b58";
+													};
+												};
+											};
+											["units"] = {
+											};
+										};
+									};
+									["firmwareVersion"] = shared[1];
+								};
+							};
+						};
+					};
+					["firmwareVersion"] = shared[1];
+				};
+				[5] = {
+					["controls"] = {
+						["offset"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["objects"] = {
+						["gainbias"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 1.0;
+							};
+						};
+					};
+					["controlOrder"] = {
+						[1] = "offset";
+					};
+					["controlBranches"] = {
+					};
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "a6ea4db8";
+					["loadInfo"] = {
+						["keywords"] = "utility";
+						["category"] = "Essentials";
+						["title"] = "Offset";
+						["moduleName"] = "OffsetUnit";
+						["id"] = "OffsetUnit";
+						["libraryName"] = "builtins";
+					};
+					["activeView"] = "expanded";
+					["branches"] = {
+						["offset"] = {
+							["selection"] = {
+								["section"] = 1;
+								["view"] = "expanded";
+								["spot"] = 4;
+							};
+							["instanceKey"] = "a48f5df9";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["channel"] = 1;
+										["name"] = "Counter #1";
+										["type"] = "local";
+										["instanceKey"] = "f1db4ec0";
+									};
+								};
+							};
+							["units"] = {
+								[1] = {
+									["controls"] = {
+										["thresh"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["hyst"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["objects"] = {
+										["compare"] = {
+											["options"] = {
+												["State"] = 1;
+												["Mode"] = 3;
+											};
+											["params"] = {
+												["Threshold"] = 0.3;
+											};
+										};
+										["threshold"] = {
+											["params"] = {
+												["Bias"] = 0.3;
+												["Gain"] = 0.0;
+											};
+										};
+										["hysteresis"] = {
+											["params"] = {
+												["Bias"] = 0.03;
+												["Gain"] = 0.0;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "mode";
+										[2] = "input";
+										[3] = "thresh";
+										[4] = "hyst";
+									};
+									["controlBranches"] = {
+									};
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "2c0fb073";
+									["loadInfo"] = {
+										["keywords"] = "mapping,control";
+										["category"] = "Mapping and Control";
+										["title"] = "Compare";
+										["moduleName"] = "Compare";
+										["id"] = "Compare";
+										["libraryName"] = "Accents";
+									};
+									["activeView"] = "expanded";
+									["branches"] = {
+									};
+									["firmwareVersion"] = shared[1];
+								};
+								[2] = {
+									["controls"] = {
+										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["objects"] = {
+										["level"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 1.0;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "level";
+									};
+									["controlBranches"] = {
+									};
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "67eb4c67";
+									["loadInfo"] = {
+										["keywords"] = "modulate, utility";
+										["category"] = "Essentials";
+										["title"] = "Linear Bipolar VCA";
+										["moduleName"] = "VCA.LinearBipolar";
+										["id"] = "VCA.LinearBipolar";
+										["libraryName"] = "builtins";
+									};
+									["activeView"] = "expanded";
+									["branches"] = {
+										["level"] = {
+											["selection"] = {
+												["section"] = 0;
+												["view"] = "default";
+												["spot"] = 1;
+											};
+											["instanceKey"] = "c8743188";
+											["firmwareVersion"] = shared[1];
+											["channels"] = {
+												["count"] = 1;
+												["inputs"] = {
+													[1] = {
+														["name"] = "TrigSeq 8 (4)";
+														["type"] = "local";
+														["instanceKey"] = "58621d9d";
+													};
+												};
+											};
+											["units"] = {
+											};
+										};
+									};
+									["firmwareVersion"] = shared[1];
+								};
+							};
+						};
+					};
+					["firmwareVersion"] = shared[1];
+				};
+				[6] = {
+					["controls"] = {
+						["offset"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["objects"] = {
+						["gainbias"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 1.0;
+							};
+						};
+					};
+					["controlOrder"] = {
+						[1] = "offset";
+					};
+					["controlBranches"] = {
+					};
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "eefe64b6";
+					["loadInfo"] = {
+						["keywords"] = "utility";
+						["category"] = "Essentials";
+						["title"] = "Offset";
+						["moduleName"] = "OffsetUnit";
+						["id"] = "OffsetUnit";
+						["libraryName"] = "builtins";
+					};
+					["activeView"] = "expanded";
+					["branches"] = {
+						["offset"] = {
+							["selection"] = {
+								["section"] = 1;
+								["view"] = "expanded";
+								["spot"] = 4;
+							};
+							["instanceKey"] = "b3a4f55d";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["channel"] = 1;
+										["name"] = "Counter #1";
+										["type"] = "local";
+										["instanceKey"] = "f1db4ec0";
+									};
+								};
+							};
+							["units"] = {
+								[1] = {
+									["controls"] = {
+										["thresh"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["hyst"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["objects"] = {
+										["compare"] = {
+											["options"] = {
+												["State"] = 1;
+												["Mode"] = 3;
+											};
+											["params"] = {
+												["Threshold"] = 0.45;
+											};
+										};
+										["threshold"] = {
+											["params"] = {
+												["Bias"] = 0.45;
+												["Gain"] = 0.0;
+											};
+										};
+										["hysteresis"] = {
+											["params"] = {
+												["Bias"] = 0.03;
+												["Gain"] = 0.0;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "mode";
+										[2] = "input";
+										[3] = "thresh";
+										[4] = "hyst";
+									};
+									["controlBranches"] = {
+									};
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "b53f731d";
+									["loadInfo"] = {
+										["keywords"] = "mapping,control";
+										["category"] = "Mapping and Control";
+										["title"] = "Compare";
+										["moduleName"] = "Compare";
+										["id"] = "Compare";
+										["libraryName"] = "Accents";
+									};
+									["activeView"] = "expanded";
+									["branches"] = {
+									};
+									["firmwareVersion"] = shared[1];
+								};
+								[2] = {
+									["controls"] = {
+										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["objects"] = {
+										["level"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 1.0;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "level";
+									};
+									["controlBranches"] = {
+									};
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "e6f6a1cc";
+									["loadInfo"] = {
+										["keywords"] = "modulate, utility";
+										["category"] = "Essentials";
+										["title"] = "Linear Bipolar VCA";
+										["moduleName"] = "VCA.LinearBipolar";
+										["id"] = "VCA.LinearBipolar";
+										["libraryName"] = "builtins";
+									};
+									["activeView"] = "expanded";
+									["branches"] = {
+										["level"] = {
+											["selection"] = {
+												["section"] = 0;
+												["view"] = "default";
+												["spot"] = 1;
+											};
+											["instanceKey"] = "44c51c9d";
+											["firmwareVersion"] = shared[1];
+											["channels"] = {
+												["count"] = 1;
+												["inputs"] = {
+													[1] = {
+														["name"] = "TrigSeq 8 (5)";
+														["type"] = "local";
+														["instanceKey"] = "7af8566f";
+													};
+												};
+											};
+											["units"] = {
+											};
+										};
+									};
+									["firmwareVersion"] = shared[1];
+								};
+							};
+						};
+					};
+					["firmwareVersion"] = shared[1];
+				};
+				[7] = {
+					["controls"] = {
+						["offset"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["objects"] = {
+						["gainbias"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 1.0;
+							};
+						};
+					};
+					["controlOrder"] = {
+						[1] = "offset";
+					};
+					["controlBranches"] = {
+					};
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "8b28c729";
+					["loadInfo"] = {
+						["keywords"] = "utility";
+						["category"] = "Essentials";
+						["title"] = "Offset";
+						["moduleName"] = "OffsetUnit";
+						["id"] = "OffsetUnit";
+						["libraryName"] = "builtins";
+					};
+					["activeView"] = "expanded";
+					["branches"] = {
+						["offset"] = {
+							["selection"] = {
+								["section"] = 1;
+								["view"] = "expanded";
+								["spot"] = 4;
+							};
+							["instanceKey"] = "d3f4ed08";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["channel"] = 1;
+										["name"] = "Counter #1";
+										["type"] = "local";
+										["instanceKey"] = "f1db4ec0";
+									};
+								};
+							};
+							["units"] = {
+								[1] = {
+									["controls"] = {
+										["thresh"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["hyst"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["objects"] = {
+										["compare"] = {
+											["options"] = {
+												["State"] = 1;
+												["Mode"] = 3;
+											};
+											["params"] = {
+												["Threshold"] = 0.55;
+											};
+										};
+										["threshold"] = {
+											["params"] = {
+												["Bias"] = 0.55;
+												["Gain"] = 0.0;
+											};
+										};
+										["hysteresis"] = {
+											["params"] = {
+												["Bias"] = 0.03;
+												["Gain"] = 0.0;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "mode";
+										[2] = "input";
+										[3] = "thresh";
+										[4] = "hyst";
+									};
+									["controlBranches"] = {
+									};
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "0e3b3f4d";
+									["loadInfo"] = {
+										["keywords"] = "mapping,control";
+										["category"] = "Mapping and Control";
+										["title"] = "Compare";
+										["moduleName"] = "Compare";
+										["id"] = "Compare";
+										["libraryName"] = "Accents";
+									};
+									["activeView"] = "expanded";
+									["branches"] = {
+									};
+									["firmwareVersion"] = shared[1];
+								};
+								[2] = {
+									["controls"] = {
+										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["objects"] = {
+										["level"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 1.0;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "level";
+									};
+									["controlBranches"] = {
+									};
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "09aaeb93";
+									["loadInfo"] = {
+										["keywords"] = "modulate, utility";
+										["category"] = "Essentials";
+										["title"] = "Linear Bipolar VCA";
+										["moduleName"] = "VCA.LinearBipolar";
+										["id"] = "VCA.LinearBipolar";
+										["libraryName"] = "builtins";
+									};
+									["activeView"] = "expanded";
+									["branches"] = {
+										["level"] = {
+											["selection"] = {
+												["section"] = 0;
+												["view"] = "default";
+												["spot"] = 1;
+											};
+											["instanceKey"] = "f17315ee";
+											["firmwareVersion"] = shared[1];
+											["channels"] = {
+												["count"] = 1;
+												["inputs"] = {
+													[1] = {
+														["name"] = "TrigSeq 8 (6)";
+														["type"] = "local";
+														["instanceKey"] = "c79fac0c";
+													};
+												};
+											};
+											["units"] = {
+											};
+										};
+									};
+									["firmwareVersion"] = shared[1];
+								};
+							};
+						};
+					};
+					["firmwareVersion"] = shared[1];
+				};
+				[8] = {
+					["controls"] = {
+						["offset"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["objects"] = {
+						["gainbias"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 1.0;
+							};
+						};
+					};
+					["controlOrder"] = {
+						[1] = "offset";
+					};
+					["controlBranches"] = {
+					};
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "a8b3c7d8";
+					["loadInfo"] = {
+						["keywords"] = "utility";
+						["category"] = "Essentials";
+						["title"] = "Offset";
+						["moduleName"] = "OffsetUnit";
+						["id"] = "OffsetUnit";
+						["libraryName"] = "builtins";
+					};
+					["activeView"] = "expanded";
+					["branches"] = {
+						["offset"] = {
+							["selection"] = {
+								["section"] = 1;
+								["view"] = "expanded";
+								["spot"] = 4;
+							};
+							["instanceKey"] = "6cf78a92";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["channel"] = 1;
+										["name"] = "Counter #1";
+										["type"] = "local";
+										["instanceKey"] = "f1db4ec0";
+									};
+								};
+							};
+							["units"] = {
+								[1] = {
+									["controls"] = {
+										["thresh"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["hyst"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["objects"] = {
+										["compare"] = {
+											["options"] = {
+												["State"] = 1;
+												["Mode"] = 3;
+											};
+											["params"] = {
+												["Threshold"] = 0.7;
+											};
+										};
+										["threshold"] = {
+											["params"] = {
+												["Bias"] = 0.7;
+												["Gain"] = 0.0;
+											};
+										};
+										["hysteresis"] = {
+											["params"] = {
+												["Bias"] = 0.03;
+												["Gain"] = 0.0;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "mode";
+										[2] = "input";
+										[3] = "thresh";
+										[4] = "hyst";
+									};
+									["controlBranches"] = {
+									};
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "a4a1d5b6";
+									["loadInfo"] = {
+										["keywords"] = "mapping,control";
+										["category"] = "Mapping and Control";
+										["title"] = "Compare";
+										["moduleName"] = "Compare";
+										["id"] = "Compare";
+										["libraryName"] = "Accents";
+									};
+									["activeView"] = "expanded";
+									["branches"] = {
+									};
+									["firmwareVersion"] = shared[1];
+								};
+								[2] = {
+									["controls"] = {
+										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["objects"] = {
+										["level"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 1.0;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "level";
+									};
+									["controlBranches"] = {
+									};
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "c8d00834";
+									["loadInfo"] = {
+										["keywords"] = "modulate, utility";
+										["category"] = "Essentials";
+										["title"] = "Linear Bipolar VCA";
+										["moduleName"] = "VCA.LinearBipolar";
+										["id"] = "VCA.LinearBipolar";
+										["libraryName"] = "builtins";
+									};
+									["activeView"] = "expanded";
+									["branches"] = {
+										["level"] = {
+											["selection"] = {
+												["section"] = 0;
+												["view"] = "default";
+												["spot"] = 1;
+											};
+											["instanceKey"] = "241f165d";
+											["firmwareVersion"] = shared[1];
+											["channels"] = {
+												["count"] = 1;
+												["inputs"] = {
+													[1] = {
+														["name"] = "TrigSeq 8 (7)";
+														["type"] = "local";
+														["instanceKey"] = "a8719ae8";
+													};
+												};
+											};
+											["units"] = {
+											};
+										};
+									};
+									["firmwareVersion"] = shared[1];
+								};
+							};
+						};
+					};
+					["firmwareVersion"] = shared[1];
+				};
+				[9] = {
+					["controls"] = {
+						["offset"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["objects"] = {
+						["gainbias"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 1.0;
+							};
+						};
+					};
+					["controlOrder"] = {
+						[1] = "offset";
+					};
+					["controlBranches"] = {
+					};
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "b705c963";
+					["loadInfo"] = {
+						["keywords"] = "utility";
+						["category"] = "Essentials";
+						["title"] = "Offset";
+						["moduleName"] = "OffsetUnit";
+						["id"] = "OffsetUnit";
+						["libraryName"] = "builtins";
+					};
+					["activeView"] = "expanded";
+					["branches"] = {
+						["offset"] = {
+							["selection"] = {
+								["section"] = 1;
+								["view"] = "expanded";
+								["spot"] = 4;
+							};
+							["instanceKey"] = "7b47434e";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["channel"] = 1;
+										["name"] = "Counter #1";
+										["type"] = "local";
+										["instanceKey"] = "f1db4ec0";
+									};
+								};
+							};
+							["units"] = {
+								[1] = {
+									["controls"] = {
+										["thresh"] = {
+											["gainEncoderState"] = "Coarse";
+											["encoderState"] = "Fine";
+										};
+										["hyst"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["objects"] = {
+										["compare"] = {
+											["options"] = {
+												["State"] = 1;
+												["Mode"] = 3;
+											};
+											["params"] = {
+												["Threshold"] = 0.8010001;
+											};
+										};
+										["threshold"] = {
+											["params"] = {
+												["Bias"] = 0.8010001;
+												["Gain"] = 0.0;
+											};
+										};
+										["hysteresis"] = {
+											["params"] = {
+												["Bias"] = 0.02;
+												["Gain"] = 0.0;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "mode";
+										[2] = "input";
+										[3] = "thresh";
+										[4] = "hyst";
+									};
+									["controlBranches"] = {
+									};
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "a4ce0402";
+									["loadInfo"] = {
+										["keywords"] = "mapping,control";
+										["category"] = "Mapping and Control";
+										["title"] = "Compare";
+										["moduleName"] = "Compare";
+										["id"] = "Compare";
+										["libraryName"] = "Accents";
+									};
+									["activeView"] = "expanded";
+									["branches"] = {
+									};
+									["firmwareVersion"] = shared[1];
+								};
+								[2] = {
+									["controls"] = {
+										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["objects"] = {
+										["level"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 1.0;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "level";
+									};
+									["controlBranches"] = {
+									};
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "5e9244a1";
+									["loadInfo"] = {
+										["keywords"] = "modulate, utility";
+										["category"] = "Essentials";
+										["title"] = "Linear Bipolar VCA";
+										["moduleName"] = "VCA.LinearBipolar";
+										["id"] = "VCA.LinearBipolar";
+										["libraryName"] = "builtins";
+									};
+									["activeView"] = "expanded";
+									["branches"] = {
+										["level"] = {
+											["selection"] = {
+												["section"] = 0;
+												["view"] = "default";
+												["spot"] = 1;
+											};
+											["instanceKey"] = "78a25215";
+											["firmwareVersion"] = shared[1];
+											["channels"] = {
+												["count"] = 1;
+												["inputs"] = {
+													[1] = {
+														["name"] = "TrigSeq 8 (8)";
+														["type"] = "local";
+														["instanceKey"] = "3a408f84";
+													};
+												};
+											};
+											["units"] = {
+											};
+										};
+									};
+									["firmwareVersion"] = shared[1];
+								};
+							};
+						};
+					};
+					["firmwareVersion"] = shared[1];
+				};
+				[10] = {
+					["controls"] = {
+					};
+					["objects"] = {
+						["inGain"] = {
+							["params"] = {
+								["Gain"] = 1.0;
+							};
+						};
+						["outGain"] = {
+							["params"] = {
+								["Gain"] = 1.0;
+							};
+						};
+						["limiter"] = {
+							["options"] = {
+								["Type"] = 3;
+							};
+						};
+					};
+					["controlOrder"] = {
+						[1] = "pre";
+						[2] = "type";
+						[3] = "post";
+					};
+					["controlBranches"] = {
+					};
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "44fe998b";
+					["loadInfo"] = {
+						["keywords"] = "utility, effect, mixing";
+						["category"] = "Essentials";
+						["title"] = "Limiter";
+						["moduleName"] = "LimiterUnit";
+						["id"] = "LimiterUnit";
+						["libraryName"] = "builtins";
+					};
+					["activeView"] = "expanded";
+					["branches"] = {
+					};
+					["firmwareVersion"] = shared[1];
+				};
+			};
+			["instanceKey"] = "2739ff57";
+		};
+	};
+	["loadInfo"] = {
+		["keywords"] = "utility, effect, source, custom";
+		["category"] = "Containers";
+		["title"] = "Custom";
+		["moduleName"] = "Custom";
+		["id"] = "Custom";
+		["libraryName"] = "builtins";
+	};
+}
+return obj1

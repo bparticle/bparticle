@@ -1,0 +1,744 @@
+-- Persistent Data
+local shared = {
+{};
+} -- shared
+shared[1]["SimpleString"] = "0.4.11";
+shared[1]["Major"] = 0;
+shared[1]["Patch"] = 0;
+shared[1]["Status"] = "unstable";
+shared[1]["Minor"] = 4;
+shared[1]["Name"] = "Fennel (48kHz, 128smps)";
+shared[1]["Build"] = 11;
+shared[1]["String"] = "0.4.11 (unstable)";
+local obj1 = {
+	["instanceKey"] = "ec34d760";
+	["controls"] = {
+	};
+	["controlOrder"] = {
+		[1] = "Echo";
+		[2] = "Verb";
+		[3] = "Bright";
+		[4] = "Fdb";
+		[5] = "Flip";
+		[6] = "meter";
+	};
+	["controlBranches"] = {
+		["Verb"] = {
+			["units"] = {
+			};
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Bias"] = 0.0;
+						["Gain"] = 0.0;
+					};
+				};
+			};
+			["id"] = "Verb";
+			["selection"] = {
+				["section"] = 0;
+				["view"] = "default";
+				["spot"] = 0;
+			};
+			["control"] = {
+				["customizations"] = {
+					["biasSuperFineStep"] = 0.0001;
+					["biasMax"] = 1;
+					["biasCoarseStep"] = 0.01;
+					["name"] = "Verb";
+					["biasMin"] = 0;
+					["biasFineStep"] = 0.0009999999;
+				};
+				["gainEncoderState"] = "Coarse";
+			};
+			["instanceKey"] = "123c1670";
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+				};
+			};
+			["type"] = "GainBias";
+			["firmwareVersion"] = shared[1];
+		};
+		["Flip"] = {
+			["units"] = {
+			};
+			["objects"] = {
+				[1] = {
+					["options"] = {
+						["State"] = 0;
+					};
+					["params"] = {
+						["Threshold"] = 0.1;
+					};
+				};
+			};
+			["id"] = "Flip";
+			["selection"] = {
+				["section"] = 1;
+				["view"] = "expanded";
+				["spot"] = 0;
+			};
+			["control"] = {
+				["customizations"] = {
+					["name"] = "Flip";
+					["outputMode"] = 1;
+				};
+			};
+			["instanceKey"] = "a56aa00f";
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+				};
+			};
+			["type"] = "Gate";
+			["firmwareVersion"] = shared[1];
+		};
+		["Fdb"] = {
+			["units"] = {
+			};
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Bias"] = 0.0;
+						["Gain"] = 0.0;
+					};
+				};
+			};
+			["id"] = "Fdb";
+			["selection"] = {
+				["section"] = 1;
+				["view"] = "expanded";
+				["spot"] = 0;
+			};
+			["control"] = {
+				["customizations"] = {
+					["name"] = "Fdb";
+					["biasMin"] = 0;
+					["biasMax"] = 1;
+				};
+				["gainEncoderState"] = "Coarse";
+			};
+			["instanceKey"] = "d37fcde8";
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+				};
+			};
+			["type"] = "GainBias";
+			["firmwareVersion"] = shared[1];
+		};
+		["Bright"] = {
+			["units"] = {
+			};
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Bias"] = 0.0;
+						["Gain"] = 0.0;
+					};
+				};
+			};
+			["id"] = "Bright";
+			["selection"] = {
+				["section"] = 1;
+				["view"] = "expanded";
+				["spot"] = 0;
+			};
+			["control"] = {
+				["customizations"] = {
+					["name"] = "Bright";
+					["biasMin"] = 0;
+					["biasMax"] = 1;
+				};
+				["gainEncoderState"] = "Coarse";
+			};
+			["instanceKey"] = "5b5b5030";
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+				};
+			};
+			["type"] = "GainBias";
+			["firmwareVersion"] = shared[1];
+		};
+		["Echo"] = {
+			["units"] = {
+			};
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Bias"] = 0.0;
+						["Gain"] = 1.0;
+					};
+				};
+			};
+			["id"] = "Echo";
+			["selection"] = {
+				["section"] = 0;
+				["view"] = "default";
+				["spot"] = 0;
+			};
+			["control"] = {
+				["gainEncoderState"] = "Coarse";
+				["customizations"] = {
+					["name"] = "Echo";
+					["biasMin"] = 0;
+					["biasMax"] = 1;
+				};
+				["encoderState"] = "Fine";
+			};
+			["instanceKey"] = "a61b17d6";
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+				};
+			};
+			["type"] = "GainBias";
+			["firmwareVersion"] = shared[1];
+		};
+	};
+	["lastPresetPath"] = "1:/ER-301/v0.4/presets/custom-unit/mudlogger";
+	["objects"] = {
+	};
+	["branches"] = {
+	};
+	["title"] = "Tilt Cove";
+	["hasUserTitle"] = true;
+	["bypass"] = false;
+	["unitVersion"] = 1;
+	["lastPresetFilename"] = "Tilt-Cove.unit";
+	["firmwareVersion"] = shared[1];
+	["activeView"] = "expanded";
+	["bands"] = {
+		[1] = {
+			["firmwareVersion"] = shared[1];
+			["selection"] = {
+				["section"] = 1;
+				["view"] = "expanded";
+				["spot"] = 3;
+			};
+			["units"] = {
+				[1] = {
+					["controls"] = {
+						["midGain"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["highGain"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["lowGain"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["objects"] = {
+						["highGain"] = {
+							["params"] = {
+								["Bias"] = 0.03981072;
+								["Gain"] = 0.08;
+							};
+						};
+						["equalizer"] = {
+							["params"] = {
+								["Low Freq"] = 1244.508;
+								["High Freq"] = 13289.75;
+							};
+						};
+						["equalizer1"] = {
+							["params"] = {
+								["Low Freq"] = 1244.508;
+								["High Freq"] = 13289.75;
+							};
+						};
+						["midGain"] = {
+							["params"] = {
+								["Bias"] = 0.003162278;
+								["Gain"] = 0.35;
+							};
+						};
+						["lowGain"] = {
+							["params"] = {
+								["Bias"] = 1.122018;
+								["Gain"] = 0.0;
+							};
+						};
+					};
+					["controlOrder"] = {
+						[1] = "lowGain";
+						[2] = "midGain";
+						[3] = "highGain";
+						[4] = "lowFreq";
+						[5] = "highFreq";
+					};
+					["controlBranches"] = {
+					};
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "5e60776f";
+					["loadInfo"] = {
+						["keywords"] = "filter, mixing";
+						["category"] = "Filtering";
+						["title"] = "EQ3";
+						["moduleName"] = "EQ3Unit";
+						["id"] = "EQ3Unit";
+						["libraryName"] = "builtins";
+					};
+					["activeView"] = "expanded";
+					["branches"] = {
+						["midGain"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["instanceKey"] = "8d268de0";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["name"] = "Tilt Cove (Bright)";
+										["type"] = "local";
+										["instanceKey"] = "5b5b5030";
+									};
+								};
+							};
+							["units"] = {
+							};
+						};
+						["highGain"] = {
+							["selection"] = {
+								["section"] = 1;
+								["view"] = "expanded";
+								["spot"] = 3;
+							};
+							["instanceKey"] = "1509b2a8";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+								};
+							};
+							["units"] = {
+								[1] = {
+									["controls"] = {
+										["phase"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["freq"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["feedback"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["tune"] = {
+											["gainEncoderState"] = "Neutral";
+										};
+									};
+									["objects"] = {
+										["phase"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 0.0;
+											};
+										};
+										["f0"] = {
+											["params"] = {
+												["Bias"] = 0.135;
+												["Gain"] = 0.0;
+											};
+										};
+										["osc"] = {
+											["params"] = {
+												["Internal Phase"] = 0.9857785;
+											};
+										};
+										["level"] = {
+											["params"] = {
+												["Bias"] = 0.5;
+												["Gain"] = 0.0;
+											};
+										};
+										["feedback"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 0.0;
+											};
+										};
+										["sync"] = {
+											["options"] = {
+												["State"] = 0;
+											};
+											["params"] = {
+												["Threshold"] = 0.1;
+											};
+										};
+										["tune"] = {
+											["params"] = {
+												["Offset"] = 0.0;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "tune";
+										[2] = "freq";
+										[3] = "phase";
+										[4] = "feedback";
+										[5] = "sync";
+										[6] = "level";
+									};
+									["controlBranches"] = {
+									};
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "7474b258";
+									["loadInfo"] = {
+										["keywords"] = "source, pitch, modulate";
+										["category"] = "Oscillators";
+										["title"] = "Sine Osc";
+										["moduleName"] = "Oscillators.Sine";
+										["id"] = "Oscillators.Sine";
+										["libraryName"] = "builtins";
+									};
+									["activeView"] = "expanded";
+									["branches"] = {
+									};
+									["firmwareVersion"] = shared[1];
+								};
+							};
+						};
+					};
+					["firmwareVersion"] = shared[1];
+				};
+				[2] = {
+					["controls"] = {
+					};
+					["objects"] = {
+						["outGain1"] = {
+							["params"] = {
+								["Gain"] = 1.0;
+							};
+						};
+						["inGain1"] = {
+							["params"] = {
+								["Gain"] = 1.0;
+							};
+						};
+						["limiter"] = {
+							["options"] = {
+								["Type"] = 2;
+							};
+						};
+						["inGain"] = {
+							["params"] = {
+								["Gain"] = 1.0;
+							};
+						};
+						["outGain"] = {
+							["params"] = {
+								["Gain"] = 1.0;
+							};
+						};
+						["limiter1"] = {
+							["options"] = {
+								["Type"] = 2;
+							};
+						};
+					};
+					["controlOrder"] = {
+						[1] = "pre";
+						[2] = "type";
+						[3] = "post";
+					};
+					["controlBranches"] = {
+					};
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "12cfcb9a";
+					["loadInfo"] = {
+						["keywords"] = "utility, effect, mixing";
+						["category"] = "Essentials";
+						["title"] = "Limiter";
+						["moduleName"] = "LimiterUnit";
+						["id"] = "LimiterUnit";
+						["libraryName"] = "builtins";
+					};
+					["activeView"] = "collapsed";
+					["branches"] = {
+					};
+					["firmwareVersion"] = shared[1];
+				};
+				[3] = {
+					["controls"] = {
+						["delay"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["feedback"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["spread"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["wet"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["objects"] = {
+						["fader"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 1.0;
+							};
+						};
+						["feedback"] = {
+							["params"] = {
+								["Bias"] = 0.01584893;
+								["Gain"] = 0.9;
+							};
+						};
+						["spread"] = {
+							["params"] = {
+								["Bias"] = 1.0;
+								["Gain"] = -2.0;
+							};
+						};
+						["secs"] = {
+							["params"] = {
+								["Bias"] = 0.29;
+								["Gain"] = 0.0;
+							};
+						};
+					};
+					["maximumDelayTime"] = 1.002667;
+					["controlOrder"] = {
+						[1] = "delay";
+						[2] = "spread";
+						[3] = "feedback";
+						[4] = "wet";
+					};
+					["controlBranches"] = {
+					};
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "b973f31f";
+					["loadInfo"] = {
+						["category"] = "Delays and Reverb";
+						["libraryName"] = "builtins";
+						["channelCount"] = 2;
+						["title"] = "Spread Delay";
+						["moduleName"] = "Delay.SpreadDelayUnit";
+						["id"] = "Delay.SpreadDelayUnit";
+						["keywords"] = "delay, effect";
+					};
+					["activeView"] = "expanded";
+					["branches"] = {
+						["feedback"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["instanceKey"] = "baabe2b1";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["name"] = "Tilt Cove (Feedback LFO Speed)";
+										["type"] = "local";
+										["instanceKey"] = "d37fcde8";
+									};
+								};
+							};
+							["units"] = {
+							};
+						};
+						["spread"] = {
+							["selection"] = {
+								["section"] = 2;
+								["view"] = "default";
+								["spot"] = 0;
+							};
+							["instanceKey"] = "1f19ad70";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["name"] = "Tilt Cove (Flip)";
+										["type"] = "local";
+										["instanceKey"] = "a56aa00f";
+									};
+								};
+							};
+							["units"] = {
+								[1] = {
+									["controls"] = {
+										["time"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["objects"] = {
+										["slew1"] = {
+											["options"] = {
+												["Direction"] = 2;
+											};
+										};
+										["time"] = {
+											["params"] = {
+												["Bias"] = 0.5;
+												["Gain"] = 0.0;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "time";
+										[2] = "dir";
+									};
+									["controlBranches"] = {
+									};
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "1e462103";
+									["loadInfo"] = {
+										["keywords"] = "filter, utility";
+										["category"] = "Filtering";
+										["title"] = "Slew Limiter";
+										["moduleName"] = "SlewLimiter";
+										["id"] = "SlewLimiter";
+										["libraryName"] = "builtins";
+									};
+									["activeView"] = "expanded";
+									["branches"] = {
+									};
+									["firmwareVersion"] = shared[1];
+								};
+							};
+						};
+						["wet"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["instanceKey"] = "b3ecbcc1";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["name"] = "Tilt Cove (Echo)";
+										["type"] = "local";
+										["instanceKey"] = "a61b17d6";
+									};
+								};
+							};
+							["units"] = {
+							};
+						};
+					};
+					["firmwareVersion"] = shared[1];
+				};
+				[4] = {
+					["controls"] = {
+						["width"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["damp"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["size"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["wet"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["objects"] = {
+						["width"] = {
+							["params"] = {
+								["Bias"] = 1.0;
+								["Gain"] = 0.0;
+							};
+						};
+						["fader"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 0.8;
+							};
+						};
+						["size"] = {
+							["params"] = {
+								["Bias"] = 0.14;
+								["Gain"] = 0.0;
+							};
+						};
+						["damp"] = {
+							["params"] = {
+								["Bias"] = 0.78;
+								["Gain"] = 0.0;
+							};
+						};
+					};
+					["controlOrder"] = {
+						[1] = "size";
+						[2] = "damp";
+						[3] = "width";
+						[4] = "wet";
+					};
+					["controlBranches"] = {
+					};
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "b2f06b72";
+					["loadInfo"] = {
+						["keywords"] = "effect";
+						["category"] = "Delays and Reverb";
+						["title"] = "Freeverb";
+						["moduleName"] = "FreeverbUnit";
+						["id"] = "FreeverbUnit";
+						["libraryName"] = "builtins";
+					};
+					["activeView"] = "expanded";
+					["branches"] = {
+						["wet"] = {
+							["selection"] = {
+								["section"] = 0;
+								["view"] = "default";
+								["spot"] = 1;
+							};
+							["instanceKey"] = "7a51710a";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+									[1] = {
+										["name"] = "Tilt Cove (Verb)";
+										["type"] = "local";
+										["instanceKey"] = "123c1670";
+									};
+								};
+							};
+							["units"] = {
+							};
+						};
+					};
+					["firmwareVersion"] = shared[1];
+				};
+			};
+			["instanceKey"] = "4b8634a8";
+		};
+	};
+	["loadInfo"] = {
+		["keywords"] = "utility, effect, source, custom";
+		["category"] = "Containers";
+		["title"] = "Custom";
+		["moduleName"] = "Custom";
+		["id"] = "Custom";
+		["libraryName"] = "builtins";
+	};
+}
+return obj1
