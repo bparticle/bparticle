@@ -53,9 +53,8 @@ A stereo delay effect preset.
 **file**: <a href="https://github.com/bparticle/bparticle/raw/master/Tilt-Cove.unit">Tilt-Cove.unit</a>
 
 ## Wave Fader Suite
-![Wavefader animation](img/wavefader.gif)
-
 Mixing presets for wavetable synthesis and other experiments
+![Wavefader animation](img/wavefader.gif)
 
 **Forum discussion**: https://forum.orthogonaldevices.com/t/wave-fader-suite-wavetable-mixing-presets
 
