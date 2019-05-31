@@ -65,3 +65,6 @@ Mixing presets for wavetable synthesis and other experiments
 * <a href="https://github.com/bparticle/bparticle/raw/master/WaveFader-3.unit">WaveFader-3.unit</a>
 * <a href="https://github.com/bparticle/bparticle/raw/master/WaveFader-4.unit">WaveFader-4.unit</a>
 * <a href="https://github.com/bparticle/bparticle/raw/master/WaveFader-5.unit">WaveFader-5.unit</a>
+
+**Demo**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5Z_ye8rpEPs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
