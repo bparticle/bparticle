@@ -36,3 +36,13 @@ A stereo delay effect preset.
 **Forum discussion**: https://forum.orthogonaldevices.com/t/tilt-cove-stereo-delay-preset
 **type**: effect, stereo
 **file**: Tilt-Cove.unit
+
+## Wave Fader Suite
+Mixing presets for wavetable synthesis and other experiments
+**Forum discussion**: https://forum.orthogonaldevices.com/t/wave-fader-suite-wavetable-mixing-presets
+**type**: utility/mixing
+**files**:
+* WaveFader.unit
+* WaveFader-3.unit
+* WaveFader-4.unit
+* WaveFader-5.unit
