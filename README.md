@@ -1,15 +1,6 @@
 # Bparticle's presets for the ER-301 sound computer
 ![Bparticle's presets header image](img/er-301_github-cover.png)
 
-## 8 triggers
-This is an 8 step trigger sequencer.
-
-**Forum discussion**: https://forum.orthogonaldevices.com/t/8-step-trig-sequencer-unit
-
-**type**: utility
-
-**file**: 8_triggers.unit
-
 
 ## Binaural Beats
 A tuned binaural beats machine.
