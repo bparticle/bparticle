@@ -22,6 +22,9 @@ Sample scratching and mixing with external audio or internal sounds.
 
 **file**: <a href="https://github.com/bparticle/bparticle/raw/master/Itchy.unit">Itchy.unit</a>
 
+**Demo**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Q1EFOXoTXFM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Punchcard 8
 This is an 8 step trigger sequencer.
 
@@ -31,6 +34,9 @@ This is an 8 step trigger sequencer.
 **type**: utility
 
 **file**: <a href="https://github.com/bparticle/bparticle/raw/master/punchcard-8.unit">punchcard-8.unit</a>
+
+**Demo**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qmHM-cFNTaI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Straight Shooter
 A very simple synth voice based on two oscillators.
@@ -42,6 +48,9 @@ A very simple synth voice based on two oscillators.
 
 **file**: <a href="https://github.com/bparticle/bparticle/raw/master/straight_shooter.unit">straight_shooter.unit</a>
 
+**Demo**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/s1T7_Vj64EI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Tilt Cove
 A stereo delay effect preset.
 
@@ -51,6 +60,9 @@ A stereo delay effect preset.
 **type**: effect, stereo
 
 **file**: <a href="https://github.com/bparticle/bparticle/raw/master/Tilt-Cove.unit">Tilt-Cove.unit</a>
+
+**Demo**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uOfzCSRm31s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Wave Fader Suite
 Mixing presets for wavetable synthesis and other experiments
