@@ -1,0 +1,1171 @@
+-- Persistent Data
+local shared = {
+{};
+} -- shared
+shared[1]["SimpleString"] = "0.4.11";
+shared[1]["Major"] = 0;
+shared[1]["Patch"] = 0;
+shared[1]["Status"] = "unstable";
+shared[1]["Minor"] = 4;
+shared[1]["Name"] = "Fennel (48kHz, 128smps)";
+shared[1]["Build"] = 11;
+shared[1]["String"] = "0.4.11 (unstable)";
+local obj1 = {
+	["instanceKey"] = "ae4b9902";
+	["controls"] = {
+	};
+	["controlOrder"] = {
+		[1] = "1V/Oct";
+		[2] = "gate";
+		[3] = "Mix";
+		[4] = "Spread";
+		[5] = "level";
+		[6] = "meter";
+	};
+	["controlBranches"] = {
+		["Spread"] = {
+			["units"] = {
+			};
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Bias"] = 0.0;
+						["Gain"] = 2.0;
+					};
+				};
+			};
+			["id"] = "Spread";
+			["selection"] = {
+				["section"] = 0;
+				["view"] = "default";
+				["spot"] = 1;
+			};
+			["control"] = {
+				["customizations"] = {
+					["name"] = "Spread";
+					["biasMin"] = -1;
+					["biasMax"] = 1;
+				};
+				["gainEncoderState"] = "Coarse";
+			};
+			["instanceKey"] = "2803671e";
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+				};
+			};
+			["type"] = "GainBias";
+			["firmwareVersion"] = shared[1];
+		};
+		["1V/Oct"] = {
+			["units"] = {
+			};
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Offset"] = 0.0;
+					};
+				};
+			};
+			["id"] = "1V/Oct";
+			["selection"] = {
+				["section"] = 0;
+				["view"] = "default";
+				["spot"] = 1;
+			};
+			["control"] = {
+				["customizations"] = {
+					["name"] = "1V/Oct";
+				};
+				["gainEncoderState"] = "Neutral";
+			};
+			["instanceKey"] = "8ea7cf5e";
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+				};
+			};
+			["type"] = "Pitch";
+			["firmwareVersion"] = shared[1];
+		};
+		["gate"] = {
+			["units"] = {
+			};
+			["objects"] = {
+				[1] = {
+					["options"] = {
+						["State"] = 0;
+					};
+					["params"] = {
+						["Threshold"] = 0.1;
+					};
+				};
+			};
+			["id"] = "gate";
+			["selection"] = {
+				["section"] = 1;
+				["view"] = "expanded";
+				["spot"] = 0;
+			};
+			["control"] = {
+				["customizations"] = {
+					["name"] = "gate";
+					["outputMode"] = 2;
+				};
+			};
+			["instanceKey"] = "69677c29";
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+				};
+			};
+			["type"] = "Gate";
+			["firmwareVersion"] = shared[1];
+		};
+		["Mix"] = {
+			["units"] = {
+			};
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Bias"] = 0.0;
+						["Gain"] = 1.0;
+					};
+				};
+			};
+			["id"] = "Mix";
+			["selection"] = {
+				["section"] = 0;
+				["view"] = "default";
+				["spot"] = 1;
+			};
+			["control"] = {
+				["customizations"] = {
+					["name"] = "Mix";
+					["biasMin"] = -0.5;
+					["biasMax"] = 0.5;
+				};
+				["gainEncoderState"] = "Coarse";
+			};
+			["instanceKey"] = "2f623ca1";
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+				};
+			};
+			["type"] = "GainBias";
+			["firmwareVersion"] = shared[1];
+		};
+		["level"] = {
+			["units"] = {
+				[1] = {
+					["controls"] = {
+						["release"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["decay"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["sustain"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+						["attack"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+					["objects"] = {
+						["decay"] = {
+							["params"] = {
+								["Bias"] = 0.05;
+								["Gain"] = 0.0;
+							};
+						};
+						["release"] = {
+							["params"] = {
+								["Bias"] = 0.1;
+								["Gain"] = 0.0;
+							};
+						};
+						["gate"] = {
+							["options"] = {
+								["State"] = 0;
+							};
+							["params"] = {
+								["Threshold"] = 0.1;
+							};
+						};
+						["sustain"] = {
+							["params"] = {
+								["Bias"] = 1.0;
+								["Gain"] = 0.0;
+							};
+						};
+						["attack"] = {
+							["params"] = {
+								["Bias"] = 0.05;
+								["Gain"] = 0.0;
+							};
+						};
+					};
+					["controlOrder"] = {
+						[1] = "input";
+						[2] = "attack";
+						[3] = "decay";
+						[4] = "sustain";
+						[5] = "release";
+					};
+					["controlBranches"] = {
+					};
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "b25f9964";
+					["loadInfo"] = {
+						["keywords"] = "modulate, source, utility";
+						["category"] = "Envelopes";
+						["title"] = "ADSR";
+						["moduleName"] = "Envelopes.ADSR";
+						["id"] = "Envelopes.ADSR";
+						["libraryName"] = "builtins";
+					};
+					["activeView"] = "expanded";
+					["branches"] = {
+					};
+					["firmwareVersion"] = shared[1];
+				};
+			};
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Bias"] = 0.0;
+						["Gain"] = 1.0;
+					};
+				};
+			};
+			["id"] = "level";
+			["selection"] = {
+				["section"] = 1;
+				["view"] = "expanded";
+				["spot"] = 4;
+			};
+			["control"] = {
+				["customizations"] = {
+					["name"] = "level";
+					["biasMin"] = -5;
+					["biasMax"] = 5;
+				};
+				["gainEncoderState"] = "Coarse";
+			};
+			["instanceKey"] = "a5950b93";
+			["channels"] = {
+				["count"] = 1;
+				["inputs"] = {
+					[1] = {
+						["name"] = "Wave Fader Classic (gate)";
+						["type"] = "local";
+						["instanceKey"] = "69677c29";
+					};
+				};
+			};
+			["type"] = "GainBias";
+			["firmwareVersion"] = shared[1];
+		};
+	};
+	["lastPresetPath"] = "1:/ER-301/v0.4/presets/custom-unit/Osc";
+	["objects"] = {
+	};
+	["branches"] = {
+	};
+	["title"] = "Wave Fader Classic";
+	["hasUserTitle"] = true;
+	["bypass"] = false;
+	["unitVersion"] = 1;
+	["lastPresetFilename"] = "x-Wave.unit";
+	["firmwareVersion"] = shared[1];
+	["activeView"] = "expanded";
+	["bands"] = {
+		[1] = {
+			["firmwareVersion"] = shared[1];
+			["selection"] = {
+				["section"] = 2;
+				["view"] = "expanded";
+				["spot"] = 2;
+			};
+			["units"] = {
+				[1] = {
+					["controls"] = {
+					};
+					["branches"] = {
+						["input"] = {
+							["selection"] = {
+								["section"] = 1;
+								["view"] = "expanded";
+								["spot"] = 1;
+							};
+							["instanceKey"] = "0022db3f";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+								};
+							};
+							["units"] = {
+								[1] = {
+									["controls"] = {
+										["speed"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["shift"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["pitch"] = {
+											["gainEncoderState"] = "Neutral";
+										};
+										["slice"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["wave"] = {
+											["gain"] = 0;
+											["time"] = 0.014;
+										};
+									};
+									["controlOrder"] = {
+										[1] = "pitch";
+										[2] = "speed";
+										[3] = "trigger";
+										[4] = "slice";
+										[5] = "shift";
+										[6] = "fade";
+									};
+									["objects"] = {
+										["speed"] = {
+											["params"] = {
+												["Bias"] = 1.0;
+												["Gain"] = 0.0;
+											};
+										};
+										["shift"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 0.0;
+											};
+										};
+										["head"] = {
+											["options"] = {
+												["How Much"] = 1;
+												["Address"] = 2;
+												["Interpolation"] = 3;
+												["How Often"] = 2;
+												["Routing"] = 1;
+												["Polarity"] = 2;
+											};
+											["params"] = {
+												["Fade Time"] = 0.002;
+											};
+										};
+										["slice"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 0.0;
+											};
+										};
+										["comparator"] = {
+											["options"] = {
+												["State"] = 0;
+											};
+											["params"] = {
+												["Threshold"] = 0.1;
+											};
+										};
+										["tune"] = {
+											["params"] = {
+												["Offset"] = 0.0;
+											};
+										};
+									};
+									["controlBranches"] = {
+									};
+									["branches"] = {
+										["trig"] = {
+											["selection"] = {
+												["section"] = 0;
+												["view"] = "default";
+												["spot"] = 1;
+											};
+											["instanceKey"] = "24f4f890";
+											["firmwareVersion"] = shared[1];
+											["channels"] = {
+												["count"] = 1;
+												["inputs"] = {
+													[1] = {
+														["name"] = "Wave Fader Classic (gate)";
+														["type"] = "local";
+														["instanceKey"] = "69677c29";
+													};
+												};
+											};
+											["units"] = {
+											};
+										};
+										["tune"] = {
+											["selection"] = {
+												["section"] = 0;
+												["view"] = "default";
+												["spot"] = 1;
+											};
+											["instanceKey"] = "364aec57";
+											["firmwareVersion"] = shared[1];
+											["channels"] = {
+												["count"] = 1;
+												["inputs"] = {
+													[1] = {
+														["name"] = "Wave Fader Classic (1V/Oct)";
+														["type"] = "local";
+														["instanceKey"] = "8ea7cf5e";
+													};
+												};
+											};
+											["units"] = {
+											};
+										};
+									};
+									["title"] = "Sample #1";
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "a1da1267";
+									["loadInfo"] = {
+										["keywords"] = "sampling, source";
+										["category"] = "Sample Playback";
+										["title"] = "Variable Speed Player";
+										["moduleName"] = "Player.VariSpeed";
+										["id"] = "Player.VariSpeed";
+										["libraryName"] = "builtins";
+									};
+									["hasUserTitle"] = true;
+									["firmwareVersion"] = shared[1];
+									["activeView"] = "expanded";
+								};
+								[2] = {
+									["controls"] = {
+										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["controlOrder"] = {
+										[1] = "level";
+									};
+									["objects"] = {
+										["rectify"] = {
+											["options"] = {
+												["Type"] = 1;
+											};
+										};
+										["level"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 1.0;
+											};
+										};
+									};
+									["controlBranches"] = {
+									};
+									["branches"] = {
+										["level"] = {
+											["selection"] = {
+												["section"] = 1;
+												["view"] = "center";
+												["spot"] = 6;
+											};
+											["instanceKey"] = "d278fac2";
+											["firmwareVersion"] = shared[1];
+											["channels"] = {
+												["count"] = 1;
+												["inputs"] = {
+													[1] = {
+														["name"] = "Wave Fader Classic (Mix)";
+														["type"] = "local";
+														["instanceKey"] = "2f623ca1";
+													};
+												};
+											};
+											["units"] = {
+												[1] = {
+													["controls"] = {
+														["phase"] = {
+															["gainEncoderState"] = "Coarse";
+														};
+														["center"] = {
+															["gainEncoderState"] = "Coarse";
+															["encoderState"] = "Fine";
+														};
+														["fade"] = {
+															["gainEncoderState"] = "Coarse";
+														};
+														["width"] = {
+															["customizations"] = {
+																["biasMax"] = 4;
+															};
+															["gainEncoderState"] = "Coarse";
+														};
+														["wave"] = {
+															["gain"] = 0;
+															["time"] = 0.014;
+														};
+														["height"] = {
+															["gainEncoderState"] = "Coarse";
+														};
+													};
+													["sample"] = {
+														["opts"] = {
+															["type"] = "single";
+														};
+														["path"] = "1:/ER-301/samples/CV/Triangle.wav";
+														["slices"] = {
+															["path"] = "1:/ER-301/samples/CV/Triangle.slc";
+															["rate"] = 48000.0;
+														};
+													};
+													["objects"] = {
+														["width"] = {
+															["params"] = {
+																["Bias"] = 2.0;
+																["Gain"] = 2.0;
+															};
+														};
+														["height"] = {
+															["params"] = {
+																["Bias"] = 0.5;
+																["Gain"] = 0.0;
+															};
+														};
+														["bump1"] = {
+															["options"] = {
+																["Interpolation"] = 2;
+															};
+														};
+														["center"] = {
+															["params"] = {
+																["Bias"] = -0.5;
+																["Gain"] = 0.0;
+															};
+														};
+														["phase"] = {
+															["params"] = {
+																["Bias"] = 0.0;
+																["Gain"] = 0.0;
+															};
+														};
+														["fade"] = {
+															["params"] = {
+																["Bias"] = 0.25;
+																["Gain"] = 0.0;
+															};
+														};
+													};
+													["controlOrder"] = {
+														[1] = "center";
+														[2] = "width";
+														[3] = "height";
+														[4] = "fade";
+														[5] = "phase";
+													};
+													["controlBranches"] = {
+													};
+													["bypass"] = false;
+													["unitVersion"] = 1;
+													["instanceKey"] = "03357e33";
+													["loadInfo"] = {
+														["keywords"] = "utility, effect, sampling";
+														["category"] = "Mapping and Control";
+														["title"] = "Sample Scanner";
+														["moduleName"] = "SampleScanner";
+														["id"] = "SampleScanner";
+														["libraryName"] = "builtins";
+													};
+													["activeView"] = "center";
+													["branches"] = {
+														["width"] = {
+															["selection"] = {
+																["section"] = 0;
+																["view"] = "default";
+																["spot"] = 1;
+															};
+															["instanceKey"] = "5b4304f8";
+															["firmwareVersion"] = shared[1];
+															["channels"] = {
+																["count"] = 1;
+																["inputs"] = {
+																	[1] = {
+																		["name"] = "Wave Fader Classic (Spread)";
+																		["type"] = "local";
+																		["instanceKey"] = "2803671e";
+																	};
+																};
+															};
+															["units"] = {
+															};
+														};
+													};
+													["firmwareVersion"] = shared[1];
+												};
+											};
+										};
+									};
+									["title"] = "Mix VCA #1";
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "d289fcb5";
+									["loadInfo"] = {
+										["keywords"] = "modulate, utility";
+										["category"] = "Essentials";
+										["title"] = "Linear Unipolar VCA";
+										["moduleName"] = "VCA.LinearUnipolar";
+										["id"] = "VCA.LinearUnipolar";
+										["libraryName"] = "builtins";
+									};
+									["hasUserTitle"] = true;
+									["firmwareVersion"] = shared[1];
+									["activeView"] = "expanded";
+								};
+								[3] = {
+									["controls"] = {
+										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["controlOrder"] = {
+										[1] = "level";
+									};
+									["objects"] = {
+										["rectify"] = {
+											["options"] = {
+												["Type"] = 1;
+											};
+										};
+										["level"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 1.0;
+											};
+										};
+									};
+									["controlBranches"] = {
+									};
+									["branches"] = {
+										["level"] = {
+											["selection"] = {
+												["section"] = 0;
+												["view"] = "default";
+												["spot"] = 1;
+											};
+											["instanceKey"] = "f1f89546";
+											["firmwareVersion"] = shared[1];
+											["channels"] = {
+												["count"] = 1;
+												["inputs"] = {
+													[1] = {
+														["name"] = "Wave Fader Classic (level)";
+														["type"] = "local";
+														["instanceKey"] = "a5950b93";
+													};
+												};
+											};
+											["units"] = {
+											};
+										};
+									};
+									["title"] = "Level VCA #2";
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "a009307f";
+									["loadInfo"] = {
+										["keywords"] = "modulate, utility";
+										["category"] = "Essentials";
+										["title"] = "Linear Unipolar VCA";
+										["moduleName"] = "VCA.LinearUnipolar";
+										["id"] = "VCA.LinearUnipolar";
+										["libraryName"] = "builtins";
+									};
+									["hasUserTitle"] = true;
+									["firmwareVersion"] = shared[1];
+									["activeView"] = "expanded";
+								};
+							};
+						};
+					};
+					["mute"] = false;
+					["controlOrder"] = {
+						[1] = "gain";
+					};
+					["objects"] = {
+						["gain"] = {
+							["params"] = {
+								["Gain"] = 1.0;
+							};
+						};
+					};
+					["controlBranches"] = {
+					};
+					["solo"] = false;
+					["title"] = "Wave 1";
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "2d6b6319";
+					["loadInfo"] = {
+						["keywords"] = "mixing, routing";
+						["category"] = "Essentials";
+						["title"] = "Mixer Channel";
+						["moduleName"] = "MixerUnit";
+						["id"] = "MixerUnit";
+						["libraryName"] = "builtins";
+					};
+					["hasUserTitle"] = true;
+					["firmwareVersion"] = shared[1];
+					["activeView"] = "expanded";
+				};
+				[2] = {
+					["controls"] = {
+					};
+					["branches"] = {
+						["input"] = {
+							["selection"] = {
+								["section"] = 1;
+								["view"] = "expanded";
+								["spot"] = 1;
+							};
+							["instanceKey"] = "ffeb7064";
+							["firmwareVersion"] = shared[1];
+							["channels"] = {
+								["count"] = 1;
+								["inputs"] = {
+								};
+							};
+							["units"] = {
+								[1] = {
+									["controls"] = {
+										["speed"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["shift"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["pitch"] = {
+											["gainEncoderState"] = "Neutral";
+										};
+										["slice"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["wave"] = {
+											["gain"] = 0;
+											["time"] = 9.996;
+										};
+									};
+									["controlOrder"] = {
+										[1] = "pitch";
+										[2] = "speed";
+										[3] = "trigger";
+										[4] = "slice";
+										[5] = "shift";
+										[6] = "fade";
+									};
+									["objects"] = {
+										["speed"] = {
+											["params"] = {
+												["Bias"] = 1.0;
+												["Gain"] = 0.0;
+											};
+										};
+										["shift"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 0.0;
+											};
+										};
+										["head"] = {
+											["options"] = {
+												["How Much"] = 1;
+												["Address"] = 2;
+												["Interpolation"] = 3;
+												["How Often"] = 2;
+												["Routing"] = 1;
+												["Polarity"] = 2;
+											};
+											["params"] = {
+												["Fade Time"] = 0.002;
+											};
+										};
+										["slice"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 0.0;
+											};
+										};
+										["comparator"] = {
+											["options"] = {
+												["State"] = 0;
+											};
+											["params"] = {
+												["Threshold"] = 0.1;
+											};
+										};
+										["tune"] = {
+											["params"] = {
+												["Offset"] = 0.0;
+											};
+										};
+									};
+									["controlBranches"] = {
+									};
+									["branches"] = {
+										["trig"] = {
+											["selection"] = {
+												["section"] = 0;
+												["view"] = "default";
+												["spot"] = 1;
+											};
+											["instanceKey"] = "b12af19b";
+											["firmwareVersion"] = shared[1];
+											["channels"] = {
+												["count"] = 1;
+												["inputs"] = {
+													[1] = {
+														["name"] = "Wave Fader Classic (gate)";
+														["type"] = "local";
+														["instanceKey"] = "69677c29";
+													};
+												};
+											};
+											["units"] = {
+											};
+										};
+										["tune"] = {
+											["selection"] = {
+												["section"] = 0;
+												["view"] = "default";
+												["spot"] = 1;
+											};
+											["instanceKey"] = "697d48a2";
+											["firmwareVersion"] = shared[1];
+											["channels"] = {
+												["count"] = 1;
+												["inputs"] = {
+													[1] = {
+														["name"] = "Wave Fader Classic (1V/Oct)";
+														["type"] = "local";
+														["instanceKey"] = "8ea7cf5e";
+													};
+												};
+											};
+											["units"] = {
+											};
+										};
+									};
+									["title"] = "Sample #2";
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "f584e45c";
+									["loadInfo"] = {
+										["keywords"] = "sampling, source";
+										["category"] = "Sample Playback";
+										["title"] = "Variable Speed Player";
+										["moduleName"] = "Player.VariSpeed";
+										["id"] = "Player.VariSpeed";
+										["libraryName"] = "builtins";
+									};
+									["hasUserTitle"] = true;
+									["firmwareVersion"] = shared[1];
+									["activeView"] = "expanded";
+								};
+								[2] = {
+									["controls"] = {
+										["level"] = {
+											["gainEncoderState"] = "Fine";
+										};
+									};
+									["controlOrder"] = {
+										[1] = "level";
+									};
+									["objects"] = {
+										["rectify"] = {
+											["options"] = {
+												["Type"] = 1;
+											};
+										};
+										["level"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 1.316;
+											};
+										};
+									};
+									["controlBranches"] = {
+									};
+									["branches"] = {
+										["level"] = {
+											["selection"] = {
+												["section"] = 1;
+												["view"] = "expanded";
+												["spot"] = 3;
+											};
+											["instanceKey"] = "e96f25d2";
+											["firmwareVersion"] = shared[1];
+											["channels"] = {
+												["count"] = 1;
+												["inputs"] = {
+													[1] = {
+														["name"] = "Wave Fader Classic (Mix)";
+														["type"] = "local";
+														["instanceKey"] = "2f623ca1";
+													};
+												};
+											};
+											["units"] = {
+												[1] = {
+													["controls"] = {
+														["phase"] = {
+															["gainEncoderState"] = "Coarse";
+														};
+														["center"] = {
+															["gainEncoderState"] = "Coarse";
+															["encoderState"] = "Fine";
+														};
+														["fade"] = {
+															["gainEncoderState"] = "Coarse";
+														};
+														["width"] = {
+															["customizations"] = {
+																["biasMax"] = 4;
+															};
+															["gainEncoderState"] = "Coarse";
+														};
+														["wave"] = {
+															["gain"] = 0;
+															["time"] = 0.014;
+														};
+														["height"] = {
+															["gainEncoderState"] = "Coarse";
+														};
+													};
+													["sample"] = {
+														["opts"] = {
+															["type"] = "single";
+														};
+														["path"] = "1:/ER-301/samples/CV/Triangle.wav";
+														["slices"] = {
+															["path"] = "1:/ER-301/samples/CV/Triangle.slc";
+															["rate"] = 48000.0;
+														};
+													};
+													["controlOrder"] = {
+														[1] = "center";
+														[2] = "width";
+														[3] = "height";
+														[4] = "fade";
+														[5] = "phase";
+													};
+													["objects"] = {
+														["width"] = {
+															["params"] = {
+																["Bias"] = 2.0;
+																["Gain"] = 2.0;
+															};
+														};
+														["height"] = {
+															["params"] = {
+																["Bias"] = 0.5;
+																["Gain"] = 0.0;
+															};
+														};
+														["bump1"] = {
+															["options"] = {
+																["Interpolation"] = 2;
+															};
+														};
+														["center"] = {
+															["params"] = {
+																["Bias"] = 0.5;
+																["Gain"] = 0.0;
+															};
+														};
+														["phase"] = {
+															["params"] = {
+																["Bias"] = 0.0;
+																["Gain"] = 0.0;
+															};
+														};
+														["fade"] = {
+															["params"] = {
+																["Bias"] = 0.25;
+																["Gain"] = 0.0;
+															};
+														};
+													};
+													["controlBranches"] = {
+													};
+													["branches"] = {
+														["width"] = {
+															["selection"] = {
+																["section"] = 0;
+																["view"] = "default";
+																["spot"] = 1;
+															};
+															["instanceKey"] = "309eebcb";
+															["firmwareVersion"] = shared[1];
+															["channels"] = {
+																["count"] = 1;
+																["inputs"] = {
+																	[1] = {
+																		["name"] = "Wave Fader Classic (Spread)";
+																		["type"] = "local";
+																		["instanceKey"] = "2803671e";
+																	};
+																};
+															};
+															["units"] = {
+															};
+														};
+													};
+													["title"] = "Sample Scanner #2";
+													["bypass"] = false;
+													["unitVersion"] = 1;
+													["instanceKey"] = "73cbe842";
+													["loadInfo"] = {
+														["keywords"] = "utility, effect, sampling";
+														["category"] = "Mapping and Control";
+														["title"] = "Sample Scanner";
+														["moduleName"] = "SampleScanner";
+														["id"] = "SampleScanner";
+														["libraryName"] = "builtins";
+													};
+													["hasUserTitle"] = true;
+													["firmwareVersion"] = shared[1];
+													["activeView"] = "expanded";
+												};
+											};
+										};
+									};
+									["title"] = "Mix VCA #2";
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "3701b3cc";
+									["loadInfo"] = {
+										["keywords"] = "modulate, utility";
+										["category"] = "Essentials";
+										["title"] = "Linear Unipolar VCA";
+										["moduleName"] = "VCA.LinearUnipolar";
+										["id"] = "VCA.LinearUnipolar";
+										["libraryName"] = "builtins";
+									};
+									["hasUserTitle"] = true;
+									["firmwareVersion"] = shared[1];
+									["activeView"] = "expanded";
+								};
+								[3] = {
+									["controls"] = {
+										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+									["controlOrder"] = {
+										[1] = "level";
+									};
+									["objects"] = {
+										["rectify"] = {
+											["options"] = {
+												["Type"] = 1;
+											};
+										};
+										["level"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 1.0;
+											};
+										};
+									};
+									["controlBranches"] = {
+									};
+									["branches"] = {
+										["level"] = {
+											["selection"] = {
+												["section"] = 0;
+												["view"] = "default";
+												["spot"] = 1;
+											};
+											["instanceKey"] = "effe6c37";
+											["firmwareVersion"] = shared[1];
+											["channels"] = {
+												["count"] = 1;
+												["inputs"] = {
+													[1] = {
+														["name"] = "Wave Fader Classic (level)";
+														["type"] = "local";
+														["instanceKey"] = "a5950b93";
+													};
+												};
+											};
+											["units"] = {
+											};
+										};
+									};
+									["title"] = "Level VCA #2";
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["instanceKey"] = "d32a1cd2";
+									["loadInfo"] = {
+										["keywords"] = "modulate, utility";
+										["category"] = "Essentials";
+										["title"] = "Linear Unipolar VCA";
+										["moduleName"] = "VCA.LinearUnipolar";
+										["id"] = "VCA.LinearUnipolar";
+										["libraryName"] = "builtins";
+									};
+									["hasUserTitle"] = true;
+									["firmwareVersion"] = shared[1];
+									["activeView"] = "expanded";
+								};
+							};
+						};
+					};
+					["mute"] = false;
+					["controlOrder"] = {
+						[1] = "gain";
+					};
+					["objects"] = {
+						["gain"] = {
+							["params"] = {
+								["Gain"] = 1.0;
+							};
+						};
+					};
+					["controlBranches"] = {
+					};
+					["solo"] = false;
+					["title"] = "Wave 2";
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["instanceKey"] = "a6f56bc1";
+					["loadInfo"] = {
+						["keywords"] = "mixing, routing";
+						["category"] = "Essentials";
+						["title"] = "Mixer Channel";
+						["moduleName"] = "MixerUnit";
+						["id"] = "MixerUnit";
+						["libraryName"] = "builtins";
+					};
+					["hasUserTitle"] = true;
+					["firmwareVersion"] = shared[1];
+					["activeView"] = "expanded";
+				};
+			};
+			["instanceKey"] = "1636c711";
+		};
+	};
+	["loadInfo"] = {
+		["keywords"] = "utility, effect, source, custom";
+		["category"] = "Containers";
+		["title"] = "Custom";
+		["moduleName"] = "Custom";
+		["id"] = "Custom";
+		["libraryName"] = "builtins";
+	};
+}
+return obj1
