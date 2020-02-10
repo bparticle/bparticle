@@ -1,0 +1,2407 @@
+-- Persistent Data
+local shared = {
+{};
+} -- shared
+shared[1]["Major"] = 0;
+shared[1]["SimpleString"] = "0.4.26";
+shared[1]["String"] = "0.4.26 (stable)";
+shared[1]["Patch"] = 0;
+shared[1]["Name"] = "Fennel (48kHz, 128smps)";
+shared[1]["Status"] = "stable";
+shared[1]["Build"] = 26;
+shared[1]["Minor"] = 4;
+local obj1 = {
+	["activeView"] = "expanded";
+	["firmwareVersion"] = shared[1];
+	["hasUserTitle"] = true;
+	["bands"] = {
+		[1] = {
+			["instanceKey"] = "3a05b627";
+			["firmwareVersion"] = shared[1];
+			["selection"] = {
+				["view"] = "expanded";
+				["spot"] = 0;
+				["section"] = 2;
+			};
+			["units"] = {
+				[1] = {
+					["activeView"] = "expanded";
+					["firmwareVersion"] = shared[1];
+					["hasUserTitle"] = true;
+					["controlOrder"] = {
+						[1] = "level";
+					};
+					["loadInfo"] = {
+						["title"] = "Linear Unipolar VCA";
+						["keywords"] = "modulate, utility";
+						["id"] = "VCA.LinearUnipolar";
+						["moduleName"] = "VCA.LinearUnipolar";
+						["libraryName"] = "builtins";
+						["category"] = "Essentials";
+					};
+					["title"] = "Blocker VCA #1";
+					["instanceKey"] = "197f68cb";
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["branches"] = {
+						["level"] = {
+							["instanceKey"] = "765759d4";
+							["firmwareVersion"] = shared[1];
+							["selection"] = {
+								["view"] = "expanded";
+								["spot"] = 3;
+								["section"] = 1;
+							};
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["name"] = "TriCycle (Route)";
+										["type"] = "local";
+										["instanceKey"] = "be7cbc47";
+									};
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+								[1] = {
+									["activeView"] = "expanded";
+									["objects"] = {
+										["center"] = {
+											["params"] = {
+												["Bias"] = 1.0;
+												["Gain"] = 0.0;
+											};
+										};
+										["width"] = {
+											["params"] = {
+												["Bias"] = 0.79;
+												["Gain"] = 0.0;
+											};
+										};
+										["height"] = {
+											["params"] = {
+												["Bias"] = 1.0;
+												["Gain"] = 0.0;
+											};
+										};
+										["fade"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 0.0;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "center";
+										[2] = "width";
+										[3] = "height";
+										[4] = "fade";
+									};
+									["loadInfo"] = {
+										["title"] = "Bump Scanner";
+										["keywords"] = "utility, effect";
+										["id"] = "BumpMap";
+										["moduleName"] = "BumpMap";
+										["libraryName"] = "builtins";
+										["category"] = "Mapping and Control";
+									};
+									["instanceKey"] = "52b6aa05";
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["firmwareVersion"] = shared[1];
+									["branches"] = {
+									};
+									["controlBranches"] = {
+									};
+									["controls"] = {
+										["width"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["center"] = {
+											["gainEncoderState"] = "Coarse";
+											["customizations"] = {
+												["biasMax"] = 3.2;
+												["biasMin"] = 1;
+											};
+										};
+										["height"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["fade"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+								};
+								[2] = {
+									["activeView"] = "expanded";
+									["objects"] = {
+										["time"] = {
+											["params"] = {
+												["Bias"] = 0.003;
+												["Gain"] = 0.0;
+											};
+										};
+										["slew1"] = {
+											["options"] = {
+												["Direction"] = 2;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "time";
+										[2] = "dir";
+									};
+									["loadInfo"] = {
+										["title"] = "Slew Limiter";
+										["keywords"] = "filter, utility";
+										["id"] = "SlewLimiter";
+										["moduleName"] = "SlewLimiter";
+										["libraryName"] = "builtins";
+										["category"] = "Filtering";
+									};
+									["instanceKey"] = "50767239";
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["firmwareVersion"] = shared[1];
+									["branches"] = {
+									};
+									["controlBranches"] = {
+									};
+									["controls"] = {
+										["time"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+								};
+							};
+						};
+					};
+					["objects"] = {
+						["level"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 1.0;
+							};
+						};
+						["rectify"] = {
+							["options"] = {
+								["Type"] = 1;
+							};
+						};
+					};
+					["controlBranches"] = {
+					};
+					["controls"] = {
+						["level"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+				};
+				[2] = {
+					["activeView"] = "expanded";
+					["objects"] = {
+						["record"] = {
+							["params"] = {
+								["Threshold"] = 0.1;
+							};
+							["options"] = {
+								["State"] = 0;
+							};
+						};
+						["stop"] = {
+							["params"] = {
+								["Threshold"] = 0.1;
+							};
+							["options"] = {
+								["State"] = 0;
+							};
+						};
+						["feedback"] = {
+							["params"] = {
+								["Bias"] = 1.0;
+								["Gain"] = 0.0;
+							};
+						};
+						["undo"] = {
+							["params"] = {
+								["Threshold"] = 0.1;
+							};
+							["options"] = {
+								["State"] = 0;
+							};
+						};
+						["looper"] = {
+							["options"] = {
+								["After Record"] = 0;
+								["Pass Input"] = 31;
+							};
+						};
+					};
+					["maximumLoopTime"] = 30.02133;
+					["controlOrder"] = {
+						[1] = "record";
+						[2] = "stop";
+						[3] = "undo";
+						[4] = "feedback";
+					};
+					["loadInfo"] = {
+						["title"] = "Pedal Looper";
+						["keywords"] = "sampling, effect";
+						["id"] = "Looper.PedalLooper";
+						["moduleName"] = "Looper.PedalLooper";
+						["libraryName"] = "builtins";
+						["category"] = "Recording and Looping";
+					};
+					["instanceKey"] = "d174f051";
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["firmwareVersion"] = shared[1];
+					["branches"] = {
+						["record"] = {
+							["instanceKey"] = "62f4df0d";
+							["firmwareVersion"] = shared[1];
+							["selection"] = {
+								["view"] = "default";
+								["spot"] = 0;
+								["section"] = 3;
+							};
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["name"] = "TriCycle (Rec+oD.)";
+										["type"] = "local";
+										["instanceKey"] = "49078392";
+									};
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+								[1] = {
+									["activeView"] = "expanded";
+									["objects"] = {
+										["level"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 1.0;
+											};
+										};
+										["rectify"] = {
+											["options"] = {
+												["Type"] = 1;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "level";
+									};
+									["loadInfo"] = {
+										["title"] = "Linear Unipolar VCA";
+										["keywords"] = "modulate, utility";
+										["id"] = "VCA.LinearUnipolar";
+										["moduleName"] = "VCA.LinearUnipolar";
+										["libraryName"] = "builtins";
+										["category"] = "Essentials";
+									};
+									["instanceKey"] = "d944be92";
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["firmwareVersion"] = shared[1];
+									["branches"] = {
+										["level"] = {
+											["instanceKey"] = "d4901817";
+											["firmwareVersion"] = shared[1];
+											["selection"] = {
+												["view"] = "default";
+												["spot"] = 1;
+												["section"] = 0;
+											};
+											["channels"] = {
+												["inputs"] = {
+													[1] = {
+														["name"] = "Bump Scanner #1";
+														["channel"] = 1;
+														["type"] = "local";
+														["instanceKey"] = "52b6aa05";
+													};
+												};
+												["count"] = 1;
+											};
+											["units"] = {
+											};
+										};
+									};
+									["controlBranches"] = {
+									};
+									["controls"] = {
+										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+								};
+								[2] = {
+									["activeView"] = "expanded";
+									["objects"] = {
+										["clockEdge"] = {
+											["params"] = {
+												["Threshold"] = 0.1;
+											};
+											["options"] = {
+												["State"] = 0;
+											};
+										};
+										["inputEdge"] = {
+											["params"] = {
+												["Threshold"] = 0.1;
+											};
+											["options"] = {
+												["State"] = 0;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "input";
+										[2] = "clock";
+									};
+									["loadInfo"] = {
+										["title"] = "Quantize to Clock";
+										["keywords"] = "effect, timing";
+										["id"] = "Timing.QuantizeToClock";
+										["moduleName"] = "Timing.QuantizeToClock";
+										["libraryName"] = "builtins";
+										["category"] = "Timing";
+									};
+									["instanceKey"] = "64d64222";
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["firmwareVersion"] = shared[1];
+									["branches"] = {
+										["clock"] = {
+											["instanceKey"] = "f40eebf7";
+											["firmwareVersion"] = shared[1];
+											["selection"] = {
+												["view"] = "default";
+												["spot"] = 1;
+												["section"] = 0;
+											};
+											["channels"] = {
+												["inputs"] = {
+													[1] = {
+														["name"] = "TriCycle (Clock)";
+														["type"] = "local";
+														["instanceKey"] = "99b29cbc";
+													};
+												};
+												["count"] = 1;
+											};
+											["units"] = {
+											};
+										};
+									};
+									["controlBranches"] = {
+									};
+									["controls"] = {
+									};
+								};
+							};
+						};
+						["stop"] = {
+							["instanceKey"] = "d1e8529e";
+							["firmwareVersion"] = shared[1];
+							["selection"] = {
+								["view"] = "default";
+								["spot"] = 0;
+								["section"] = 2;
+							};
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["name"] = "TriCycle (Stop+Cl.)";
+										["type"] = "local";
+										["instanceKey"] = "69ef78e3";
+									};
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+								[1] = {
+									["activeView"] = "expanded";
+									["objects"] = {
+										["level"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 1.0;
+											};
+										};
+										["rectify"] = {
+											["options"] = {
+												["Type"] = 1;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "level";
+									};
+									["loadInfo"] = {
+										["title"] = "Linear Unipolar VCA";
+										["keywords"] = "modulate, utility";
+										["id"] = "VCA.LinearUnipolar";
+										["moduleName"] = "VCA.LinearUnipolar";
+										["libraryName"] = "builtins";
+										["category"] = "Essentials";
+									};
+									["instanceKey"] = "7c71cb0f";
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["firmwareVersion"] = shared[1];
+									["branches"] = {
+										["level"] = {
+											["instanceKey"] = "90b63266";
+											["firmwareVersion"] = shared[1];
+											["selection"] = {
+												["view"] = "default";
+												["spot"] = 1;
+												["section"] = 0;
+											};
+											["channels"] = {
+												["inputs"] = {
+													[1] = {
+														["name"] = "Bump Scanner #1";
+														["channel"] = 1;
+														["type"] = "local";
+														["instanceKey"] = "52b6aa05";
+													};
+												};
+												["count"] = 1;
+											};
+											["units"] = {
+											};
+										};
+									};
+									["controlBranches"] = {
+									};
+									["controls"] = {
+										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+								};
+							};
+						};
+					};
+					["controlBranches"] = {
+					};
+					["controls"] = {
+						["feedback"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+				};
+				[3] = {
+					["activeView"] = "expanded";
+					["objects"] = {
+						["level"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 1.0;
+							};
+						};
+						["rectify"] = {
+							["options"] = {
+								["Type"] = 1;
+							};
+						};
+					};
+					["controlOrder"] = {
+						[1] = "level";
+					};
+					["loadInfo"] = {
+						["title"] = "Linear Unipolar VCA";
+						["keywords"] = "modulate, utility";
+						["id"] = "VCA.LinearUnipolar";
+						["moduleName"] = "VCA.LinearUnipolar";
+						["libraryName"] = "builtins";
+						["category"] = "Essentials";
+					};
+					["instanceKey"] = "5d41a03c";
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["firmwareVersion"] = shared[1];
+					["branches"] = {
+						["level"] = {
+							["instanceKey"] = "4c38a6f4";
+							["firmwareVersion"] = shared[1];
+							["selection"] = {
+								["view"] = "default";
+								["spot"] = 0;
+								["section"] = 3;
+							};
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["name"] = "TriCycle (L1 Level)";
+										["type"] = "local";
+										["instanceKey"] = "03f5b4fe";
+									};
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+								[1] = {
+									["activeView"] = "expanded";
+									["objects"] = {
+										["gainbias"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = -5.0;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "offset";
+									};
+									["loadInfo"] = {
+										["title"] = "Offset";
+										["keywords"] = "utility";
+										["id"] = "OffsetUnit";
+										["moduleName"] = "OffsetUnit";
+										["libraryName"] = "builtins";
+										["category"] = "Essentials";
+									};
+									["instanceKey"] = "d6e898b3";
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["firmwareVersion"] = shared[1];
+									["branches"] = {
+										["offset"] = {
+											["instanceKey"] = "1b6e7b1c";
+											["firmwareVersion"] = shared[1];
+											["selection"] = {
+												["view"] = "default";
+												["spot"] = 1;
+												["section"] = 0;
+											};
+											["channels"] = {
+												["inputs"] = {
+													[1] = {
+														["name"] = "TriCycle (L1 mute)";
+														["type"] = "local";
+														["instanceKey"] = "900e77dd";
+													};
+												};
+												["count"] = 1;
+											};
+											["units"] = {
+											};
+										};
+									};
+									["controlBranches"] = {
+									};
+									["controls"] = {
+										["offset"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+								};
+								[2] = {
+									["activeView"] = "expanded";
+									["objects"] = {
+										["time"] = {
+											["params"] = {
+												["Bias"] = 0.012;
+												["Gain"] = 0.0;
+											};
+										};
+										["slew1"] = {
+											["options"] = {
+												["Direction"] = 2;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "time";
+										[2] = "dir";
+									};
+									["loadInfo"] = {
+										["title"] = "Slew Limiter";
+										["keywords"] = "filter, utility";
+										["id"] = "SlewLimiter";
+										["moduleName"] = "SlewLimiter";
+										["libraryName"] = "builtins";
+										["category"] = "Filtering";
+									};
+									["instanceKey"] = "538f92a1";
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["firmwareVersion"] = shared[1];
+									["branches"] = {
+									};
+									["controlBranches"] = {
+									};
+									["controls"] = {
+										["time"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+								};
+							};
+						};
+					};
+					["controlBranches"] = {
+					};
+					["controls"] = {
+						["level"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+				};
+			};
+		};
+		[2] = {
+			["instanceKey"] = "cdd2993c";
+			["firmwareVersion"] = shared[1];
+			["selection"] = {
+				["view"] = "expanded";
+				["spot"] = 2;
+				["section"] = 2;
+			};
+			["units"] = {
+				[1] = {
+					["activeView"] = "expanded";
+					["firmwareVersion"] = shared[1];
+					["hasUserTitle"] = true;
+					["controlOrder"] = {
+						[1] = "level";
+					};
+					["loadInfo"] = {
+						["title"] = "Linear Unipolar VCA";
+						["keywords"] = "modulate, utility";
+						["id"] = "VCA.LinearUnipolar";
+						["moduleName"] = "VCA.LinearUnipolar";
+						["libraryName"] = "builtins";
+						["category"] = "Essentials";
+					};
+					["title"] = "Blocker VCA #1";
+					["instanceKey"] = "fb1bc0b9";
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["branches"] = {
+						["level"] = {
+							["instanceKey"] = "65d3cbf1";
+							["firmwareVersion"] = shared[1];
+							["selection"] = {
+								["view"] = "expanded";
+								["spot"] = 3;
+								["section"] = 2;
+							};
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["name"] = "TriCycle (Route)";
+										["type"] = "local";
+										["instanceKey"] = "be7cbc47";
+									};
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+								[1] = {
+									["activeView"] = "expanded";
+									["objects"] = {
+										["gainbias"] = {
+											["params"] = {
+												["Bias"] = -1.0;
+												["Gain"] = 0.0;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "offset";
+									};
+									["loadInfo"] = {
+										["title"] = "Offset";
+										["keywords"] = "utility";
+										["id"] = "OffsetUnit";
+										["moduleName"] = "OffsetUnit";
+										["libraryName"] = "builtins";
+										["category"] = "Essentials";
+									};
+									["instanceKey"] = "6dd0861d";
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["firmwareVersion"] = shared[1];
+									["branches"] = {
+									};
+									["controlBranches"] = {
+									};
+									["controls"] = {
+										["offset"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+								};
+								[2] = {
+									["activeView"] = "expanded";
+									["objects"] = {
+										["center"] = {
+											["params"] = {
+												["Bias"] = 2.0;
+												["Gain"] = 0.0;
+											};
+										};
+										["width"] = {
+											["params"] = {
+												["Bias"] = 0.79;
+												["Gain"] = 0.0;
+											};
+										};
+										["height"] = {
+											["params"] = {
+												["Bias"] = 1.0;
+												["Gain"] = 0.0;
+											};
+										};
+										["fade"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 0.0;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "center";
+										[2] = "width";
+										[3] = "height";
+										[4] = "fade";
+									};
+									["loadInfo"] = {
+										["title"] = "Bump Scanner";
+										["keywords"] = "utility, effect";
+										["id"] = "BumpMap";
+										["moduleName"] = "BumpMap";
+										["libraryName"] = "builtins";
+										["category"] = "Mapping and Control";
+									};
+									["instanceKey"] = "80e07035";
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["firmwareVersion"] = shared[1];
+									["branches"] = {
+									};
+									["controlBranches"] = {
+									};
+									["controls"] = {
+										["width"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["center"] = {
+											["gainEncoderState"] = "Coarse";
+											["customizations"] = {
+												["biasMax"] = 3.2;
+												["biasMin"] = 1;
+											};
+										};
+										["height"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["fade"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+								};
+								[3] = {
+									["activeView"] = "expanded";
+									["objects"] = {
+										["time"] = {
+											["params"] = {
+												["Bias"] = 0.003;
+												["Gain"] = 0.0;
+											};
+										};
+										["slew1"] = {
+											["options"] = {
+												["Direction"] = 2;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "time";
+										[2] = "dir";
+									};
+									["loadInfo"] = {
+										["title"] = "Slew Limiter";
+										["keywords"] = "filter, utility";
+										["id"] = "SlewLimiter";
+										["moduleName"] = "SlewLimiter";
+										["libraryName"] = "builtins";
+										["category"] = "Filtering";
+									};
+									["instanceKey"] = "b6ed8429";
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["firmwareVersion"] = shared[1];
+									["branches"] = {
+									};
+									["controlBranches"] = {
+									};
+									["controls"] = {
+										["time"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+								};
+							};
+						};
+					};
+					["objects"] = {
+						["level"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 1.0;
+							};
+						};
+						["rectify"] = {
+							["options"] = {
+								["Type"] = 1;
+							};
+						};
+					};
+					["controlBranches"] = {
+					};
+					["controls"] = {
+						["level"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+				};
+				[2] = {
+					["activeView"] = "expanded";
+					["objects"] = {
+						["record"] = {
+							["params"] = {
+								["Threshold"] = 0.1;
+							};
+							["options"] = {
+								["State"] = 0;
+							};
+						};
+						["stop"] = {
+							["params"] = {
+								["Threshold"] = 0.1;
+							};
+							["options"] = {
+								["State"] = 0;
+							};
+						};
+						["feedback"] = {
+							["params"] = {
+								["Bias"] = 1.0;
+								["Gain"] = 0.0;
+							};
+						};
+						["undo"] = {
+							["params"] = {
+								["Threshold"] = 0.1;
+							};
+							["options"] = {
+								["State"] = 0;
+							};
+						};
+						["looper"] = {
+							["options"] = {
+								["After Record"] = 0;
+								["Pass Input"] = 31;
+							};
+						};
+					};
+					["maximumLoopTime"] = 30.01333;
+					["controlOrder"] = {
+						[1] = "record";
+						[2] = "stop";
+						[3] = "undo";
+						[4] = "feedback";
+					};
+					["loadInfo"] = {
+						["title"] = "Pedal Looper";
+						["keywords"] = "sampling, effect";
+						["id"] = "Looper.PedalLooper";
+						["moduleName"] = "Looper.PedalLooper";
+						["libraryName"] = "builtins";
+						["category"] = "Recording and Looping";
+					};
+					["instanceKey"] = "e2612d28";
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["firmwareVersion"] = shared[1];
+					["branches"] = {
+						["record"] = {
+							["instanceKey"] = "126f3ace";
+							["firmwareVersion"] = shared[1];
+							["selection"] = {
+								["view"] = "expanded";
+								["spot"] = 0;
+								["section"] = 2;
+							};
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["name"] = "TriCycle (Rec+oD.)";
+										["type"] = "local";
+										["instanceKey"] = "49078392";
+									};
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+								[1] = {
+									["activeView"] = "expanded";
+									["objects"] = {
+										["level"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 1.0;
+											};
+										};
+										["rectify"] = {
+											["options"] = {
+												["Type"] = 1;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "level";
+									};
+									["loadInfo"] = {
+										["title"] = "Linear Unipolar VCA";
+										["keywords"] = "modulate, utility";
+										["id"] = "VCA.LinearUnipolar";
+										["moduleName"] = "VCA.LinearUnipolar";
+										["libraryName"] = "builtins";
+										["category"] = "Essentials";
+									};
+									["instanceKey"] = "d3b9cbe0";
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["firmwareVersion"] = shared[1];
+									["branches"] = {
+										["level"] = {
+											["instanceKey"] = "8402d8db";
+											["firmwareVersion"] = shared[1];
+											["selection"] = {
+												["view"] = "default";
+												["spot"] = 1;
+												["section"] = 0;
+											};
+											["channels"] = {
+												["inputs"] = {
+													[1] = {
+														["name"] = "Bump Scanner #2";
+														["channel"] = 1;
+														["type"] = "local";
+														["instanceKey"] = "80e07035";
+													};
+												};
+												["count"] = 1;
+											};
+											["units"] = {
+											};
+										};
+									};
+									["controlBranches"] = {
+									};
+									["controls"] = {
+										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+								};
+								[2] = {
+									["activeView"] = "expanded";
+									["objects"] = {
+										["clockEdge"] = {
+											["params"] = {
+												["Threshold"] = 0.1;
+											};
+											["options"] = {
+												["State"] = 0;
+											};
+										};
+										["inputEdge"] = {
+											["params"] = {
+												["Threshold"] = 0.1;
+											};
+											["options"] = {
+												["State"] = 0;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "input";
+										[2] = "clock";
+									};
+									["loadInfo"] = {
+										["title"] = "Quantize to Clock";
+										["keywords"] = "effect, timing";
+										["id"] = "Timing.QuantizeToClock";
+										["moduleName"] = "Timing.QuantizeToClock";
+										["libraryName"] = "builtins";
+										["category"] = "Timing";
+									};
+									["instanceKey"] = "3b5e514b";
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["firmwareVersion"] = shared[1];
+									["branches"] = {
+										["clock"] = {
+											["instanceKey"] = "a36cdfe2";
+											["firmwareVersion"] = shared[1];
+											["selection"] = {
+												["view"] = "default";
+												["spot"] = 1;
+												["section"] = 0;
+											};
+											["channels"] = {
+												["inputs"] = {
+													[1] = {
+														["name"] = "TriCycle (Clock)";
+														["type"] = "local";
+														["instanceKey"] = "99b29cbc";
+													};
+												};
+												["count"] = 1;
+											};
+											["units"] = {
+											};
+										};
+									};
+									["controlBranches"] = {
+									};
+									["controls"] = {
+									};
+								};
+							};
+						};
+						["stop"] = {
+							["instanceKey"] = "be42ce0c";
+							["firmwareVersion"] = shared[1];
+							["selection"] = {
+								["view"] = "default";
+								["spot"] = 0;
+								["section"] = 2;
+							};
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["name"] = "TriCycle (Stop+Cl.)";
+										["type"] = "local";
+										["instanceKey"] = "69ef78e3";
+									};
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+								[1] = {
+									["activeView"] = "expanded";
+									["objects"] = {
+										["level"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 1.0;
+											};
+										};
+										["rectify"] = {
+											["options"] = {
+												["Type"] = 1;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "level";
+									};
+									["loadInfo"] = {
+										["title"] = "Linear Unipolar VCA";
+										["keywords"] = "modulate, utility";
+										["id"] = "VCA.LinearUnipolar";
+										["moduleName"] = "VCA.LinearUnipolar";
+										["libraryName"] = "builtins";
+										["category"] = "Essentials";
+									};
+									["instanceKey"] = "a10959a5";
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["firmwareVersion"] = shared[1];
+									["branches"] = {
+										["level"] = {
+											["instanceKey"] = "79d93e68";
+											["firmwareVersion"] = shared[1];
+											["selection"] = {
+												["view"] = "default";
+												["spot"] = 1;
+												["section"] = 0;
+											};
+											["channels"] = {
+												["inputs"] = {
+													[1] = {
+														["name"] = "Bump Scanner #2";
+														["channel"] = 1;
+														["type"] = "local";
+														["instanceKey"] = "80e07035";
+													};
+												};
+												["count"] = 1;
+											};
+											["units"] = {
+											};
+										};
+									};
+									["controlBranches"] = {
+									};
+									["controls"] = {
+										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+								};
+							};
+						};
+					};
+					["controlBranches"] = {
+					};
+					["controls"] = {
+						["feedback"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+				};
+				[3] = {
+					["activeView"] = "expanded";
+					["objects"] = {
+						["level"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 1.0;
+							};
+						};
+						["rectify"] = {
+							["options"] = {
+								["Type"] = 1;
+							};
+						};
+					};
+					["controlOrder"] = {
+						[1] = "level";
+					};
+					["loadInfo"] = {
+						["title"] = "Linear Unipolar VCA";
+						["keywords"] = "modulate, utility";
+						["id"] = "VCA.LinearUnipolar";
+						["moduleName"] = "VCA.LinearUnipolar";
+						["libraryName"] = "builtins";
+						["category"] = "Essentials";
+					};
+					["instanceKey"] = "7c572cc6";
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["firmwareVersion"] = shared[1];
+					["branches"] = {
+						["level"] = {
+							["instanceKey"] = "df484291";
+							["firmwareVersion"] = shared[1];
+							["selection"] = {
+								["view"] = "expanded";
+								["spot"] = 0;
+								["section"] = 2;
+							};
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["name"] = "TriCycle (L2 Level)";
+										["type"] = "local";
+										["instanceKey"] = "afe8c827";
+									};
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+								[1] = {
+									["activeView"] = "expanded";
+									["objects"] = {
+										["gainbias"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = -5.0;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "offset";
+									};
+									["loadInfo"] = {
+										["title"] = "Offset";
+										["keywords"] = "utility";
+										["id"] = "OffsetUnit";
+										["moduleName"] = "OffsetUnit";
+										["libraryName"] = "builtins";
+										["category"] = "Essentials";
+									};
+									["instanceKey"] = "367bc7d0";
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["firmwareVersion"] = shared[1];
+									["branches"] = {
+										["offset"] = {
+											["instanceKey"] = "16b40cb4";
+											["firmwareVersion"] = shared[1];
+											["selection"] = {
+												["view"] = "default";
+												["spot"] = 1;
+												["section"] = 0;
+											};
+											["channels"] = {
+												["inputs"] = {
+													[1] = {
+														["name"] = "TriCycle (L2 mute)";
+														["type"] = "local";
+														["instanceKey"] = "679bf31b";
+													};
+												};
+												["count"] = 1;
+											};
+											["units"] = {
+											};
+										};
+									};
+									["controlBranches"] = {
+									};
+									["controls"] = {
+										["offset"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+								};
+								[2] = {
+									["activeView"] = "expanded";
+									["objects"] = {
+										["time"] = {
+											["params"] = {
+												["Bias"] = 0.012;
+												["Gain"] = 0.0;
+											};
+										};
+										["slew1"] = {
+											["options"] = {
+												["Direction"] = 2;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "time";
+										[2] = "dir";
+									};
+									["loadInfo"] = {
+										["title"] = "Slew Limiter";
+										["keywords"] = "filter, utility";
+										["id"] = "SlewLimiter";
+										["moduleName"] = "SlewLimiter";
+										["libraryName"] = "builtins";
+										["category"] = "Filtering";
+									};
+									["instanceKey"] = "fc820dd1";
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["firmwareVersion"] = shared[1];
+									["branches"] = {
+									};
+									["controlBranches"] = {
+									};
+									["controls"] = {
+										["time"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+								};
+							};
+						};
+					};
+					["controlBranches"] = {
+					};
+					["controls"] = {
+						["level"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+				};
+			};
+		};
+		[3] = {
+			["instanceKey"] = "92dc7724";
+			["firmwareVersion"] = shared[1];
+			["selection"] = {
+				["view"] = "expanded";
+				["spot"] = 2;
+				["section"] = 1;
+			};
+			["units"] = {
+				[1] = {
+					["activeView"] = "expanded";
+					["firmwareVersion"] = shared[1];
+					["hasUserTitle"] = true;
+					["controlOrder"] = {
+						[1] = "level";
+					};
+					["loadInfo"] = {
+						["title"] = "Linear Unipolar VCA";
+						["keywords"] = "modulate, utility";
+						["id"] = "VCA.LinearUnipolar";
+						["moduleName"] = "VCA.LinearUnipolar";
+						["libraryName"] = "builtins";
+						["category"] = "Essentials";
+					};
+					["title"] = "Blocker VCA #1";
+					["instanceKey"] = "331551cf";
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["branches"] = {
+						["level"] = {
+							["instanceKey"] = "f49a9613";
+							["firmwareVersion"] = shared[1];
+							["selection"] = {
+								["view"] = "expanded";
+								["spot"] = 3;
+								["section"] = 2;
+							};
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["name"] = "TriCycle (Route)";
+										["type"] = "local";
+										["instanceKey"] = "be7cbc47";
+									};
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+								[1] = {
+									["activeView"] = "expanded";
+									["objects"] = {
+										["gainbias"] = {
+											["params"] = {
+												["Bias"] = -2.0;
+												["Gain"] = 0.0;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "offset";
+									};
+									["loadInfo"] = {
+										["title"] = "Offset";
+										["keywords"] = "utility";
+										["id"] = "OffsetUnit";
+										["moduleName"] = "OffsetUnit";
+										["libraryName"] = "builtins";
+										["category"] = "Essentials";
+									};
+									["instanceKey"] = "c0c26e1d";
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["firmwareVersion"] = shared[1];
+									["branches"] = {
+									};
+									["controlBranches"] = {
+									};
+									["controls"] = {
+										["offset"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+								};
+								[2] = {
+									["activeView"] = "expanded";
+									["objects"] = {
+										["center"] = {
+											["params"] = {
+												["Bias"] = 3.0;
+												["Gain"] = 0.0;
+											};
+										};
+										["width"] = {
+											["params"] = {
+												["Bias"] = 0.79;
+												["Gain"] = 0.0;
+											};
+										};
+										["height"] = {
+											["params"] = {
+												["Bias"] = 1.0;
+												["Gain"] = 0.0;
+											};
+										};
+										["fade"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 0.0;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "center";
+										[2] = "width";
+										[3] = "height";
+										[4] = "fade";
+									};
+									["loadInfo"] = {
+										["title"] = "Bump Scanner";
+										["keywords"] = "utility, effect";
+										["id"] = "BumpMap";
+										["moduleName"] = "BumpMap";
+										["libraryName"] = "builtins";
+										["category"] = "Mapping and Control";
+									};
+									["instanceKey"] = "358af671";
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["firmwareVersion"] = shared[1];
+									["branches"] = {
+									};
+									["controlBranches"] = {
+									};
+									["controls"] = {
+										["width"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["center"] = {
+											["gainEncoderState"] = "Coarse";
+											["customizations"] = {
+												["biasMax"] = 3.2;
+												["biasMin"] = 1;
+											};
+										};
+										["height"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+										["fade"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+								};
+								[3] = {
+									["activeView"] = "expanded";
+									["objects"] = {
+										["time"] = {
+											["params"] = {
+												["Bias"] = 0.003;
+												["Gain"] = 0.0;
+											};
+										};
+										["slew1"] = {
+											["options"] = {
+												["Direction"] = 2;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "time";
+										[2] = "dir";
+									};
+									["loadInfo"] = {
+										["title"] = "Slew Limiter";
+										["keywords"] = "filter, utility";
+										["id"] = "SlewLimiter";
+										["moduleName"] = "SlewLimiter";
+										["libraryName"] = "builtins";
+										["category"] = "Filtering";
+									};
+									["instanceKey"] = "8569ecd5";
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["firmwareVersion"] = shared[1];
+									["branches"] = {
+									};
+									["controlBranches"] = {
+									};
+									["controls"] = {
+										["time"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+								};
+							};
+						};
+					};
+					["objects"] = {
+						["level"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 1.0;
+							};
+						};
+						["rectify"] = {
+							["options"] = {
+								["Type"] = 1;
+							};
+						};
+					};
+					["controlBranches"] = {
+					};
+					["controls"] = {
+						["level"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+				};
+				[2] = {
+					["activeView"] = "expanded";
+					["objects"] = {
+						["record"] = {
+							["params"] = {
+								["Threshold"] = 0.1;
+							};
+							["options"] = {
+								["State"] = 0;
+							};
+						};
+						["stop"] = {
+							["params"] = {
+								["Threshold"] = 0.1;
+							};
+							["options"] = {
+								["State"] = 0;
+							};
+						};
+						["feedback"] = {
+							["params"] = {
+								["Bias"] = 1.0;
+								["Gain"] = 0.0;
+							};
+						};
+						["undo"] = {
+							["params"] = {
+								["Threshold"] = 0.1;
+							};
+							["options"] = {
+								["State"] = 0;
+							};
+						};
+						["looper"] = {
+							["options"] = {
+								["After Record"] = 0;
+								["Pass Input"] = 31;
+							};
+						};
+					};
+					["maximumLoopTime"] = 30.01333;
+					["controlOrder"] = {
+						[1] = "record";
+						[2] = "stop";
+						[3] = "undo";
+						[4] = "feedback";
+					};
+					["loadInfo"] = {
+						["title"] = "Pedal Looper";
+						["keywords"] = "sampling, effect";
+						["id"] = "Looper.PedalLooper";
+						["moduleName"] = "Looper.PedalLooper";
+						["libraryName"] = "builtins";
+						["category"] = "Recording and Looping";
+					};
+					["instanceKey"] = "5db976f1";
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["firmwareVersion"] = shared[1];
+					["branches"] = {
+						["record"] = {
+							["instanceKey"] = "fa99c922";
+							["firmwareVersion"] = shared[1];
+							["selection"] = {
+								["view"] = "default";
+								["spot"] = 0;
+								["section"] = 0;
+							};
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["name"] = "TriCycle (Rec+oD.)";
+										["type"] = "local";
+										["instanceKey"] = "49078392";
+									};
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+								[1] = {
+									["activeView"] = "expanded";
+									["objects"] = {
+										["level"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 1.0;
+											};
+										};
+										["rectify"] = {
+											["options"] = {
+												["Type"] = 1;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "level";
+									};
+									["loadInfo"] = {
+										["title"] = "Linear Unipolar VCA";
+										["keywords"] = "modulate, utility";
+										["id"] = "VCA.LinearUnipolar";
+										["moduleName"] = "VCA.LinearUnipolar";
+										["libraryName"] = "builtins";
+										["category"] = "Essentials";
+									};
+									["instanceKey"] = "ba5e5219";
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["firmwareVersion"] = shared[1];
+									["branches"] = {
+										["level"] = {
+											["instanceKey"] = "f1532fd7";
+											["firmwareVersion"] = shared[1];
+											["selection"] = {
+												["view"] = "default";
+												["spot"] = 1;
+												["section"] = 0;
+											};
+											["channels"] = {
+												["inputs"] = {
+													[1] = {
+														["name"] = "Bump Scanner #3";
+														["channel"] = 1;
+														["type"] = "local";
+														["instanceKey"] = "358af671";
+													};
+												};
+												["count"] = 1;
+											};
+											["units"] = {
+											};
+										};
+									};
+									["controlBranches"] = {
+									};
+									["controls"] = {
+										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+								};
+								[2] = {
+									["activeView"] = "expanded";
+									["objects"] = {
+										["clockEdge"] = {
+											["params"] = {
+												["Threshold"] = 0.1;
+											};
+											["options"] = {
+												["State"] = 0;
+											};
+										};
+										["inputEdge"] = {
+											["params"] = {
+												["Threshold"] = 0.1;
+											};
+											["options"] = {
+												["State"] = 0;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "input";
+										[2] = "clock";
+									};
+									["loadInfo"] = {
+										["title"] = "Quantize to Clock";
+										["keywords"] = "effect, timing";
+										["id"] = "Timing.QuantizeToClock";
+										["moduleName"] = "Timing.QuantizeToClock";
+										["libraryName"] = "builtins";
+										["category"] = "Timing";
+									};
+									["instanceKey"] = "3e315c7d";
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["firmwareVersion"] = shared[1];
+									["branches"] = {
+										["clock"] = {
+											["instanceKey"] = "55d6cd2b";
+											["firmwareVersion"] = shared[1];
+											["selection"] = {
+												["view"] = "default";
+												["spot"] = 1;
+												["section"] = 0;
+											};
+											["channels"] = {
+												["inputs"] = {
+													[1] = {
+														["name"] = "TriCycle (Clock)";
+														["type"] = "local";
+														["instanceKey"] = "99b29cbc";
+													};
+												};
+												["count"] = 1;
+											};
+											["units"] = {
+											};
+										};
+									};
+									["controlBranches"] = {
+									};
+									["controls"] = {
+									};
+								};
+							};
+						};
+						["stop"] = {
+							["instanceKey"] = "6235e5d7";
+							["firmwareVersion"] = shared[1];
+							["selection"] = {
+								["view"] = "default";
+								["spot"] = 0;
+								["section"] = 2;
+							};
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["name"] = "TriCycle (Stop+Cl.)";
+										["type"] = "local";
+										["instanceKey"] = "69ef78e3";
+									};
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+								[1] = {
+									["activeView"] = "expanded";
+									["objects"] = {
+										["level"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = 1.0;
+											};
+										};
+										["rectify"] = {
+											["options"] = {
+												["Type"] = 1;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "level";
+									};
+									["loadInfo"] = {
+										["title"] = "Linear Unipolar VCA";
+										["keywords"] = "modulate, utility";
+										["id"] = "VCA.LinearUnipolar";
+										["moduleName"] = "VCA.LinearUnipolar";
+										["libraryName"] = "builtins";
+										["category"] = "Essentials";
+									};
+									["instanceKey"] = "d89cc044";
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["firmwareVersion"] = shared[1];
+									["branches"] = {
+										["level"] = {
+											["instanceKey"] = "fd7bde00";
+											["firmwareVersion"] = shared[1];
+											["selection"] = {
+												["view"] = "default";
+												["spot"] = 1;
+												["section"] = 0;
+											};
+											["channels"] = {
+												["inputs"] = {
+													[1] = {
+														["name"] = "Bump Scanner #3";
+														["channel"] = 1;
+														["type"] = "local";
+														["instanceKey"] = "358af671";
+													};
+												};
+												["count"] = 1;
+											};
+											["units"] = {
+											};
+										};
+									};
+									["controlBranches"] = {
+									};
+									["controls"] = {
+										["level"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+								};
+							};
+						};
+					};
+					["controlBranches"] = {
+					};
+					["controls"] = {
+						["feedback"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+				};
+				[3] = {
+					["activeView"] = "expanded";
+					["objects"] = {
+						["level"] = {
+							["params"] = {
+								["Bias"] = 0.0;
+								["Gain"] = 1.0;
+							};
+						};
+						["rectify"] = {
+							["options"] = {
+								["Type"] = 1;
+							};
+						};
+					};
+					["controlOrder"] = {
+						[1] = "level";
+					};
+					["loadInfo"] = {
+						["title"] = "Linear Unipolar VCA";
+						["keywords"] = "modulate, utility";
+						["id"] = "VCA.LinearUnipolar";
+						["moduleName"] = "VCA.LinearUnipolar";
+						["libraryName"] = "builtins";
+						["category"] = "Essentials";
+					};
+					["instanceKey"] = "15c336de";
+					["bypass"] = false;
+					["unitVersion"] = 1;
+					["firmwareVersion"] = shared[1];
+					["branches"] = {
+						["level"] = {
+							["instanceKey"] = "aa4f73bb";
+							["firmwareVersion"] = shared[1];
+							["selection"] = {
+								["view"] = "expanded";
+								["spot"] = 0;
+								["section"] = 2;
+							};
+							["channels"] = {
+								["inputs"] = {
+									[1] = {
+										["name"] = "TriCycle (L3 Level)";
+										["type"] = "local";
+										["instanceKey"] = "69f3e895";
+									};
+								};
+								["count"] = 1;
+							};
+							["units"] = {
+								[1] = {
+									["activeView"] = "expanded";
+									["objects"] = {
+										["gainbias"] = {
+											["params"] = {
+												["Bias"] = 0.0;
+												["Gain"] = -5.0;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "offset";
+									};
+									["loadInfo"] = {
+										["title"] = "Offset";
+										["keywords"] = "utility";
+										["id"] = "OffsetUnit";
+										["moduleName"] = "OffsetUnit";
+										["libraryName"] = "builtins";
+										["category"] = "Essentials";
+									};
+									["instanceKey"] = "f9ff6a4f";
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["firmwareVersion"] = shared[1];
+									["branches"] = {
+										["offset"] = {
+											["instanceKey"] = "a4b4b273";
+											["firmwareVersion"] = shared[1];
+											["selection"] = {
+												["view"] = "default";
+												["spot"] = 0;
+												["section"] = 2;
+											};
+											["channels"] = {
+												["inputs"] = {
+													[1] = {
+														["name"] = "TriCycle (L3 mute)";
+														["type"] = "local";
+														["instanceKey"] = "46417644";
+													};
+												};
+												["count"] = 1;
+											};
+											["units"] = {
+											};
+										};
+									};
+									["controlBranches"] = {
+									};
+									["controls"] = {
+										["offset"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+								};
+								[2] = {
+									["activeView"] = "expanded";
+									["objects"] = {
+										["time"] = {
+											["params"] = {
+												["Bias"] = 0.012;
+												["Gain"] = 0.0;
+											};
+										};
+										["slew1"] = {
+											["options"] = {
+												["Direction"] = 2;
+											};
+										};
+									};
+									["controlOrder"] = {
+										[1] = "time";
+										[2] = "dir";
+									};
+									["loadInfo"] = {
+										["title"] = "Slew Limiter";
+										["keywords"] = "filter, utility";
+										["id"] = "SlewLimiter";
+										["moduleName"] = "SlewLimiter";
+										["libraryName"] = "builtins";
+										["category"] = "Filtering";
+									};
+									["instanceKey"] = "2c799a46";
+									["bypass"] = false;
+									["unitVersion"] = 1;
+									["firmwareVersion"] = shared[1];
+									["branches"] = {
+									};
+									["controlBranches"] = {
+									};
+									["controls"] = {
+										["time"] = {
+											["gainEncoderState"] = "Coarse";
+										};
+									};
+								};
+							};
+						};
+					};
+					["controlBranches"] = {
+					};
+					["controls"] = {
+						["level"] = {
+							["gainEncoderState"] = "Coarse";
+						};
+					};
+				};
+			};
+		};
+	};
+	["controlOrder"] = {
+		[1] = "Route";
+		[2] = "Rec+oD.";
+		[3] = "L1 Level";
+		[4] = "L2 Level";
+		[5] = "L3 Level";
+		[6] = "L1 mute";
+		[7] = "L2 mute";
+		[8] = "L3 mute";
+		[9] = "Clock";
+		[10] = "Stop+Cl.";
+		[11] = "band1";
+		[12] = "band2";
+		[13] = "band3";
+	};
+	["lastPresetFilename"] = "triCycle.unit";
+	["title"] = "TriCycle";
+	["loadInfo"] = {
+		["title"] = "3 Bands";
+		["keywords"] = "utility, effect, container";
+		["id"] = "Container.ThreeBands";
+		["moduleName"] = "Container.ThreeBands";
+		["libraryName"] = "builtins";
+		["category"] = "Containers";
+	};
+	["lastPresetPath"] = "1:/ER-301/v0.4/presets/custom-unit/Utility";
+	["branches"] = {
+	};
+	["bypass"] = false;
+	["unitVersion"] = 1;
+	["objects"] = {
+	};
+	["instanceKey"] = "8e7be5d4";
+	["controlBranches"] = {
+		["Stop+Cl."] = {
+			["firmwareVersion"] = shared[1];
+			["selection"] = {
+				["view"] = "default";
+				["spot"] = 1;
+				["section"] = 0;
+			};
+			["control"] = {
+				["customizations"] = {
+					["name"] = "Stop+Cl.";
+					["description"] = "Stop / Clear";
+				};
+			};
+			["id"] = "Stop+Cl.";
+			["channels"] = {
+				["inputs"] = {
+					[1] = "B3";
+				};
+				["count"] = 1;
+			};
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Threshold"] = 0.1;
+					};
+					["options"] = {
+						["State"] = 0;
+					};
+				};
+			};
+			["instanceKey"] = "69ef78e3";
+			["type"] = "Gate";
+			["units"] = {
+			};
+		};
+		["Rec+oD."] = {
+			["firmwareVersion"] = shared[1];
+			["selection"] = {
+				["view"] = "default";
+				["spot"] = 1;
+				["section"] = 0;
+			};
+			["control"] = {
+				["customizations"] = {
+					["name"] = "Rec+oD.";
+					["description"] = "Rec/Overdub";
+				};
+			};
+			["id"] = "Rec+oD.";
+			["channels"] = {
+				["inputs"] = {
+					[1] = "A3";
+				};
+				["count"] = 1;
+			};
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Threshold"] = 0.1;
+					};
+					["options"] = {
+						["State"] = 0;
+					};
+				};
+			};
+			["instanceKey"] = "49078392";
+			["type"] = "Gate";
+			["units"] = {
+			};
+		};
+		["L2 mute"] = {
+			["firmwareVersion"] = shared[1];
+			["selection"] = {
+				["view"] = "default";
+				["spot"] = 1;
+				["section"] = 0;
+			};
+			["control"] = {
+				["customizations"] = {
+					["name"] = "L2 mute";
+					["inversion"] = true;
+					["outputMode"] = 1;
+				};
+			};
+			["id"] = "L2 mute";
+			["channels"] = {
+				["inputs"] = {
+					[1] = "B1";
+				};
+				["count"] = 1;
+			};
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Threshold"] = 0.1;
+					};
+					["options"] = {
+						["State"] = 2;
+					};
+				};
+			};
+			["instanceKey"] = "679bf31b";
+			["type"] = "Gate";
+			["units"] = {
+			};
+		};
+		["L3 mute"] = {
+			["firmwareVersion"] = shared[1];
+			["selection"] = {
+				["view"] = "default";
+				["spot"] = 1;
+				["section"] = 0;
+			};
+			["control"] = {
+				["customizations"] = {
+					["name"] = "L3 mute";
+					["inversion"] = true;
+					["outputMode"] = 1;
+				};
+			};
+			["id"] = "L3 mute";
+			["channels"] = {
+				["inputs"] = {
+					[1] = "C1";
+				};
+				["count"] = 1;
+			};
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Threshold"] = 0.1;
+					};
+					["options"] = {
+						["State"] = 2;
+					};
+				};
+			};
+			["instanceKey"] = "46417644";
+			["type"] = "Gate";
+			["units"] = {
+			};
+		};
+		["Clock"] = {
+			["firmwareVersion"] = shared[1];
+			["selection"] = {
+				["view"] = "default";
+				["spot"] = 1;
+				["section"] = 0;
+			};
+			["control"] = {
+				["customizations"] = {
+					["name"] = "Clock";
+				};
+			};
+			["id"] = "Clock";
+			["channels"] = {
+				["inputs"] = {
+					[1] = "D3";
+				};
+				["count"] = 1;
+			};
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Threshold"] = 0.1;
+					};
+					["options"] = {
+						["State"] = 0;
+					};
+				};
+			};
+			["instanceKey"] = "99b29cbc";
+			["type"] = "Gate";
+			["units"] = {
+			};
+		};
+		["L1 mute"] = {
+			["firmwareVersion"] = shared[1];
+			["selection"] = {
+				["view"] = "default";
+				["spot"] = 1;
+				["section"] = 0;
+			};
+			["control"] = {
+				["customizations"] = {
+					["name"] = "L1 mute";
+					["inversion"] = true;
+					["outputMode"] = 1;
+				};
+			};
+			["id"] = "L1 mute";
+			["channels"] = {
+				["inputs"] = {
+					[1] = "A1";
+				};
+				["count"] = 1;
+			};
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Threshold"] = 0.1;
+					};
+					["options"] = {
+						["State"] = 2;
+					};
+				};
+			};
+			["instanceKey"] = "900e77dd";
+			["type"] = "Gate";
+			["units"] = {
+			};
+		};
+		["Route"] = {
+			["firmwareVersion"] = shared[1];
+			["selection"] = {
+				["view"] = "default";
+				["spot"] = 1;
+				["section"] = 0;
+			};
+			["control"] = {
+				["gainEncoderState"] = "Coarse";
+				["customizations"] = {
+					["biasCoarseStep"] = 1;
+					["biasSuperFineStep"] = 1;
+					["biasPrecision"] = 0;
+					["biasFineStep"] = 1;
+					["name"] = "Route";
+					["biasMax"] = 3;
+					["biasSuperCoarseStep"] = 1;
+					["biasMin"] = 0;
+				};
+			};
+			["id"] = "Route";
+			["channels"] = {
+				["inputs"] = {
+					[1] = "D1";
+				};
+				["count"] = 1;
+			};
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Bias"] = 0.0;
+						["Gain"] = 6.0;
+					};
+				};
+			};
+			["instanceKey"] = "be7cbc47";
+			["type"] = "GainBias";
+			["units"] = {
+			};
+		};
+		["L1 Level"] = {
+			["firmwareVersion"] = shared[1];
+			["selection"] = {
+				["view"] = "default";
+				["spot"] = 0;
+				["section"] = 0;
+			};
+			["control"] = {
+				["encoderState"] = "Fine";
+				["gainEncoderState"] = "Coarse";
+				["customizations"] = {
+					["name"] = "L1 Level";
+					["biasMax"] = 2;
+					["biasMin"] = 0;
+				};
+			};
+			["id"] = "L1 Level";
+			["channels"] = {
+				["inputs"] = {
+				};
+				["count"] = 1;
+			};
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Bias"] = 0.9999999;
+						["Gain"] = 0.0;
+					};
+				};
+			};
+			["instanceKey"] = "03f5b4fe";
+			["type"] = "GainBias";
+			["units"] = {
+			};
+		};
+		["L2 Level"] = {
+			["firmwareVersion"] = shared[1];
+			["selection"] = {
+				["view"] = "default";
+				["spot"] = 0;
+				["section"] = 0;
+			};
+			["control"] = {
+				["encoderState"] = "Fine";
+				["gainEncoderState"] = "Coarse";
+				["customizations"] = {
+					["name"] = "L2 Level";
+					["biasMax"] = 2;
+					["biasMin"] = 0;
+				};
+			};
+			["id"] = "L2 Level";
+			["channels"] = {
+				["inputs"] = {
+				};
+				["count"] = 1;
+			};
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Bias"] = 0.9999999;
+						["Gain"] = 0.0;
+					};
+				};
+			};
+			["instanceKey"] = "afe8c827";
+			["type"] = "GainBias";
+			["units"] = {
+			};
+		};
+		["L3 Level"] = {
+			["firmwareVersion"] = shared[1];
+			["selection"] = {
+				["view"] = "default";
+				["spot"] = 0;
+				["section"] = 0;
+			};
+			["control"] = {
+				["encoderState"] = "Fine";
+				["gainEncoderState"] = "Coarse";
+				["customizations"] = {
+					["name"] = "L3 Level";
+					["biasMax"] = 2;
+					["biasMin"] = 0;
+				};
+			};
+			["id"] = "L3 Level";
+			["channels"] = {
+				["inputs"] = {
+				};
+				["count"] = 1;
+			};
+			["objects"] = {
+				[1] = {
+					["params"] = {
+						["Bias"] = 1.0;
+						["Gain"] = 0.0;
+					};
+				};
+			};
+			["instanceKey"] = "69f3e895";
+			["type"] = "GainBias";
+			["units"] = {
+			};
+		};
+	};
+	["controls"] = {
+	};
+}
+return obj1
